@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskq"
+version = "1.0.0"
+description = "Durable background jobs on SQLite: atomic claims, leases with heartbeats, exponential backoff, dead-letter queue and an asyncio worker pool. Zero dependencies."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sumit", email = "155360729+Sumitrcs@users.noreply.github.com" }]
+keywords = ["job-queue", "background-jobs", "asyncio", "sqlite", "worker", "retry"]
+
+[project.urls]
+Homepage = "https://github.com/Sumitrcs/taskq"
+
+[project.scripts]
+taskq = "taskq.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["taskq"]
