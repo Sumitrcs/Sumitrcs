@@ -1,0 +1,9 @@
+date,voucher_type,voucher_no,ledger,debit,credit,narration
+2026-04-02,Payment,PMT/001,Office Rent,18000,,Rent for April 2026
+2026-04-02,Payment,PMT/001,HDFC Bank,,18000,
+2026-04-05,Sales,INV/001,Acme Traders,59000,,Website development
+2026-04-05,Sales,INV/001,Sales @ 18%,,50000,
+2026-04-05,Sales,INV/001,Output CGST @ 9%,,4500,
+2026-04-05,Sales,INV/001,Output SGST @ 9%,,4500,
+2026-04-18,Receipt,RCT/001,HDFC Bank,59000,,Received against INV/001
+2026-04-18,Receipt,RCT/001,Acme Traders,,59000,

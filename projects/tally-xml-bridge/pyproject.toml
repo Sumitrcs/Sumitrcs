@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tallybridge"
+version = "1.0.0"
+description = "Convert spreadsheets to Tally Prime import XML (vouchers, GST sales, ledger masters) and Tally exports back to CSV."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sumit", email = "155360729+Sumitrcs@users.noreply.github.com" }]
+keywords = ["tally", "tally-prime", "accounting", "gst", "xml", "india"]
+
+[project.urls]
+Homepage = "https://github.com/Sumitrcs/tally-xml-bridge"
+
+[project.scripts]
+tallybridge = "tallybridge.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["tallybridge"]
