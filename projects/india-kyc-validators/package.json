@@ -1,0 +1,21 @@
+{
+  "name": "india-kyc-validators",
+  "version": "1.0.0",
+  "description": "Zero-dependency validators for Indian identifiers: GSTIN (checksum), PAN, TAN, IFSC, Aadhaar (Verhoeff), UPI ID, PIN code and vehicle numbers.",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": "./src/index.ts",
+  "scripts": {
+    "test": "node --test test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "keywords": ["gstin", "pan", "aadhaar", "ifsc", "upi", "verhoeff", "india", "kyc", "validation", "typescript"],
+  "author": "Sumit (https://github.com/Sumitrcs)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sumitrcs/india-kyc-validators.git"
+  }
+}

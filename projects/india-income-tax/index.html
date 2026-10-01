@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Income Tax Calculator FY 2025-26 — Old vs New Regime</title>
+  <meta name="description" content="Compare old and new tax regime for FY 2025-26 (AY 2026-27) with 87A rebate, marginal relief, surcharge, HRA and break-even deductions." />
+  <style>
+    :root {
+      --bg: #f5f7fb; --card: #fff; --text: #1d2433; --muted: #667085; --line: #e4e7ec;
+      --brand: #2f6fed; --good: #12b76a; --bad: #f04438;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d1117; --card: #161b22; --text: #e6edf3; --muted: #8b949e; --line: #30363d; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 28px 16px 8px; text-align: center; }
+    header h1 { margin: 0; font-size: 1.6rem; }
+    header p { margin: 4px 0 0; color: var(--muted); }
+    main { max-width: 1100px; margin: 0 auto; padding: 16px; display: grid; grid-template-columns: 360px 1fr; gap: 20px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+    fieldset { border: 0; padding: 0; margin: 0 0 14px; }
+    legend { font-weight: 600; margin-bottom: 8px; }
+    label { display: block; font-size: 0.85rem; color: var(--muted); margin: 8px 0 3px; }
+    input, select { width: 100%; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--text); font: inherit; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .check { display: flex; align-items: center; gap: 8px; margin-top: 10px; color: var(--text); }
+    .check input { width: auto; }
+    .verdict { font-size: 1.15rem; padding: 14px 18px; border-radius: 10px; background: color-mix(in srgb, var(--good) 14%, transparent); margin-bottom: 18px; }
+    .verdict b { color: var(--good); }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .regime h2 { margin: 0 0 10px; font-size: 1.1rem; display: flex; justify-content: space-between; }
+    .regime.best { outline: 2px solid var(--good); }
+    .tag { font-size: 0.75rem; background: var(--good); color: #fff; padding: 2px 8px; border-radius: 99px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    td { padding: 5px 0; border-bottom: 1px dashed var(--line); }
+    td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+    tr.total td { font-weight: 700; border-bottom: 0; padding-top: 10px; font-size: 1rem; }
+    .muted { color: var(--muted); font-size: 0.85rem; }
+    .bar { height: 10px; border-radius: 6px; background: var(--brand); margin-top: 4px; }
+    footer { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 24px 16px; }
+    @media (max-width: 860px) { main, .grid2 { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Income Tax Calculator — FY 2025-26</h1>
+    <p>Old vs New regime · 87A rebate · marginal relief · surcharge · HRA</p>
+  </header>
+
+  <main>
+    <form class="card" id="form" autocomplete="off">
+      <fieldset>
+        <legend>Income</legend>
+        <label for="salary">Gross salary (annual, ₹)</label>
+        <input id="salary" type="number" min="0" step="1000" value="1500000" />
+        <label for="otherIncome">Other income (interest, freelance, rent)</label>
+        <input id="otherIncome" type="number" min="0" step="1000" value="0" />
+        <label for="age">Age</label>
+        <select id="age">
+          <option value="below60">Below 60</option>
+          <option value="senior">60 – 79</option>
+          <option value="superSenior">80 and above</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>HRA (old regime)</legend>
+        <div class="row">
+          <div><label for="basic">Basic + DA</label><input id="basic" type="number" min="0" value="0" /></div>
+          <div><label for="hraReceived">HRA received</label><input id="hraReceived" type="number" min="0" value="0" /></div>
+        </div>
+        <label for="rentPaid">Rent paid (annual)</label>
+        <input id="rentPaid" type="number" min="0" value="0" />
+        <label class="check"><input id="metro" type="checkbox" /> Metro city (Delhi, Mumbai, Kolkata, Chennai)</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Deductions (old regime)</legend>
+        <div class="row">
+          <div><label for="sec80C">80C</label><input id="sec80C" type="number" min="0" value="0" /></div>
+          <div><label for="sec80D">80D</label><input id="sec80D" type="number" min="0" value="0" /></div>
+          <div><label for="sec80CCD1B">80CCD(1B) NPS</label><input id="sec80CCD1B" type="number" min="0" value="0" /></div>
+          <div><label for="homeLoanInterest">Home loan interest</label><input id="homeLoanInterest" type="number" min="0" value="0" /></div>
+        </div>
+        <label for="sec80CCD2">Employer NPS 80CCD(2) — both regimes</label>
+        <input id="sec80CCD2" type="number" min="0" value="0" />
+      </fieldset>
+    </form>
+
+    <section>
+      <div class="verdict" id="verdict"></div>
+      <div class="grid2">
+        <article class="card regime" id="new"></article>
+        <article class="card regime" id="old"></article>
+      </div>
+      <p class="muted" id="breakeven"></p>
+    </section>
+  </main>
+
+  <footer>For individuals resident in India, income taxed at normal slab rates. Not tax advice — verify with a CA before filing.</footer>
+
+  <script type="module">
+    import { compareRegimes, breakEvenDeductions } from "./src/tax.js";
+
+    const $ = (id) => document.getElementById(id);
+    const inr = (n) => "₹" + Math.round(n).toLocaleString("en-IN");
+    const num = (id) => Number($(id).value) || 0;
+
+    function readInput() {
+      return {
+        salary: num("salary"),
+        otherIncome: num("otherIncome"),
+        age: $("age").value,
+        hra: { basic: num("basic"), hraReceived: num("hraReceived"), rentPaid: num("rentPaid"), metro: $("metro").checked },
+        sec80C: num("sec80C"),
+        sec80D: num("sec80D"),
+        sec80CCD1B: num("sec80CCD1B"),
+        sec80CCD2: num("sec80CCD2"),
+        homeLoanInterest: num("homeLoanInterest"),
+      };
+    }
+
+    function renderRegime(el, r, title, best) {
+      el.classList.toggle("best", best);
+      const max = Math.max(...r.breakdown.map((b) => b.tax), 1);
+      const rows = [
+        ["Gross income", r.grossIncome],
+        ...r.deductions.map((d) => ["− " + d.label, d.amount]),
+        ["Taxable income", r.taxableIncome],
+        ["Tax on slabs", r.slabTax],
+        r.rebate ? ["− Rebate u/s 87A", r.rebate] : null,
+        r.rebateMarginalRelief ? ["− Marginal relief (87A)", r.rebateMarginalRelief] : null,
+        r.surcharge ? [`+ Surcharge @ ${r.surchargeRate}%`, r.surcharge] : null,
+        ["+ Health & education cess 4%", r.cess],
+      ].filter(Boolean);
+
+      el.innerHTML = `
+        <h2>${title} ${best ? '<span class="tag">Better</span>' : ""}</h2>
+        <table>
+          ${rows.map(([k, v]) => `<tr><td>${k}</td><td>${inr(v)}</td></tr>`).join("")}
+          <tr class="total"><td>Total tax</td><td>${inr(r.totalTax)}</td></tr>
+        </table>
+        <p class="muted">Effective rate ${r.effectiveRate.toFixed(2)}% · Monthly TDS ≈ ${inr(r.monthlyTds)}</p>
+        ${r.breakdown
+          .filter((b) => b.rate)
+          .map((b) => `<div class="muted">${inr(b.from)} – ${inr(b.to)} @ ${b.rate}%: ${inr(b.tax)}
+            <div class="bar" style="width:${(b.tax / max) * 100}%"></div></div>`)
+          .join("")}`;
+    }
+
+    function update() {
+      const input = readInput();
+      const cmp = compareRegimes(input);
+      renderRegime($("new"), cmp.new, "New regime", cmp.better === "new");
+      renderRegime($("old"), cmp.old, "Old regime", cmp.better === "old");
+      $("verdict").innerHTML = cmp.savings
+        ? `The <b>${cmp.better} regime</b> saves you <b>${inr(cmp.savings)}</b> this year.`
+        : "Both regimes result in the same tax.";
+
+      const be = breakEvenDeductions(input.salary, input.otherIncome, input.age);
+      $("breakeven").textContent =
+        be === null
+          ? "The old regime cannot beat the new regime at this income."
+          : be === 0
+            ? "Even without deductions the old regime is not costlier."
+            : `Break-even: the old regime becomes cheaper once your total deductions (HRA, 80C, 80D, home loan…) exceed ${inr(be)}.`;
+    }
+
+    $("form").addEventListener("input", update);
+    update();
+  </script>
+</body>
+</html>
