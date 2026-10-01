@@ -48,7 +48,7 @@ window.addEventListener("scroll", () => {
 });
 
 // ===== Typing effect =====
-const words = ["Web Developer", "App Developer", "GST Consultant", "GeM Expert", "SEO Specialist"];
+const words = ["GST & accounting software", "databases from scratch", "fast web apps", "developer tools", "GeM bid tools"];
 const typingEl = document.getElementById("typing");
 let wordIndex = 0, charIndex = 0, deleting = false;
 
@@ -107,8 +107,13 @@ filterButtons.forEach((btn) =>
 );
 
 // ===== Contact form (opens user's email app) =====
-// Change this to your real email address:
+// Your email address — used by the contact form and the email link.
 const MY_EMAIL = "you@example.com";
+const emailLink = document.getElementById("emailLink");
+if (emailLink) {
+  emailLink.href = `mailto:${MY_EMAIL}`;
+  emailLink.textContent = MY_EMAIL;
+}
 
 document.getElementById("contactForm").addEventListener("submit", (e) => {
   e.preventDefault();
@@ -116,7 +121,7 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   const body = `Name: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`;
   window.location.href =
     `mailto:${MY_EMAIL}?subject=${encodeURIComponent(data.get("subject"))}&body=${encodeURIComponent(body)}`;
-  document.getElementById("formStatus").textContent = "Thanks! Aapka email app khul raha hai…";
+  document.getElementById("formStatus").textContent = "Thanks! Opening your email app…";
   e.target.reset();
 });
 

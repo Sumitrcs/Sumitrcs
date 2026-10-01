@@ -3,9 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sumit | Web Developer & Digital Solutions</title>
-  <meta name="description" content="Portfolio of Sumit — web developer, GST & accounting consultant and digital solutions expert from Delhi, India." />
+  <title>Sumitrcs — Sumit | Full-Stack &amp; Systems Developer, Delhi</title>
+  <meta name="description" content="Sumitrcs (Sumit) is a full-stack and systems developer from Delhi, India. 20 open-source projects in Go, Rust, Python, TypeScript and C — GST and accounting tools, databases, compilers and web apps." />
+  <meta name="keywords" content="Sumitrcs, Sumit, developer, Delhi, India, GST software, Tally, GeM, Go, Rust, Python, TypeScript, open source, portfolio" />
+  <meta name="author" content="Sumit (Sumitrcs)" />
+  <link rel="canonical" href="https://sumitrcs.github.io/" />
   <meta name="theme-color" content="#6c5ce7" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sumitrcs.github.io/" />
+  <meta property="og:title" content="Sumitrcs — Sumit | Full-Stack &amp; Systems Developer" />
+  <meta property="og:description" content="20 open-source projects: GST &amp; accounting tools, a key-value database, an HTTP server and compressor in Rust, a programming language and more." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/155360729?v=4" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Sumitrcs — Sumit | Developer" />
+  <meta name="twitter:description" content="Full-stack &amp; systems developer from Delhi, India. 20 open-source projects." />
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Sumit", "alternateName": "Sumitrcs", "url": "https://sumitrcs.github.io/", "image": "https://avatars.githubusercontent.com/u/155360729?v=4", "jobTitle": "Full-Stack & Systems Developer", "address": {"@type": "PostalAddress", "addressLocality": "Delhi", "addressCountry": "IN"}, "sameAs": ["https://github.com/Sumitrcs"], "knowsAbout": ["Web development", "Go", "Rust", "Python", "TypeScript", "GST", "Accounting software", "GeM procurement", "Algorithms", "Databases"]}</script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -13,18 +28,16 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%236c5ce7'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>S</text></svg>" />
 </head>
 <body>
-  <!-- ============ NAVBAR ============ -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
-      <a href="#home" class="logo">Sumit<span>.</span></a>
-      <nav>
+      <a href="#home" class="logo" aria-label="Sumitrcs home">Sumitrcs<span>.</span></a>
+      <nav aria-label="Main">
         <ul class="nav-links" id="navLinks">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Journey</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -36,279 +49,330 @@
   </header>
 
   <main>
-    <!-- ============ HERO ============ -->
     <section class="hero" id="home">
       <div class="blob blob-1"></div>
       <div class="blob blob-2"></div>
       <div class="container hero-inner">
         <div class="hero-text reveal">
           <p class="greeting">👋 Namaste, I'm</p>
-          <h1>Sumit <span class="gradient-text">Kumar</span></h1>
-          <h2 class="typing-line">I am a <span id="typing" class="typing"></span><span class="cursor">|</span></h2>
+          <h1>Sumit <span class="gradient-text">@Sumitrcs</span></h1>
+          <h2 class="typing-line">I build <span id="typing" class="typing"></span><span class="cursor">|</span></h2>
           <p class="hero-desc">
-            I help businesses grow online — modern websites, apps, GST &amp; accounting
-            compliance, GeM registration and digital marketing, all under one roof.
+            Full-stack and systems developer from Delhi, India. I write software for Indian businesses —
+            GST, accounting and GeM tools — and enjoy building the hard parts from scratch: storage engines,
+            HTTP servers, compressors and programming languages.
           </p>
           <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-outline">Hire Me</a>
+            <a href="#projects" class="btn btn-primary">See 20 projects</a>
+            <a href="https://github.com/Sumitrcs" class="btn btn-outline" target="_blank" rel="noopener">GitHub profile</a>
           </div>
           <div class="socials">
-            <a href="https://github.com/Sumitrcs" target="_blank" rel="noopener" aria-label="GitHub">
+            <a href="https://github.com/Sumitrcs" target="_blank" rel="noopener me" aria-label="GitHub">
               <svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
-            </a>
-            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
-            </a>
-            <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.27 16.95.07 15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88Z"/></svg>
-            </a>
-            <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
-              <svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35ZM12.05 21.5h-.01a9.5 9.5 0 0 1-4.84-1.33l-.35-.21-3.6.94.96-3.5-.23-.36a9.47 9.47 0 0 1-1.45-5.05c0-5.24 4.27-9.5 9.52-9.5 2.54 0 4.93.99 6.72 2.79a9.43 9.43 0 0 1 2.78 6.72c0 5.24-4.27 9.5-9.5 9.5ZM20.13 3.9A11.4 11.4 0 0 0 12.05.5C5.76.5.64 5.62.64 11.9c0 2.01.52 3.97 1.52 5.7L.54 23.5l6.04-1.58a11.4 11.4 0 0 0 5.46 1.39h.01c6.29 0 11.41-5.12 11.41-11.4 0-3.05-1.19-5.91-3.34-8.06Z"/></svg>
             </a>
           </div>
         </div>
         <div class="hero-image reveal">
           <div class="avatar-ring">
             <div class="avatar">
-              <!-- Replace with your photo: <img src="images/profile.jpg" alt="Sumit"> -->
-              <span>SK</span>
+              <img src="https://avatars.githubusercontent.com/u/155360729?v=4" alt="Sumit (Sumitrcs)" width="360" height="360" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'S'}))" />
             </div>
           </div>
-          <div class="floating-card card-a">💻 Web &amp; App Dev</div>
-          <div class="floating-card card-b">📊 GST &amp; Accounts</div>
-          <div class="floating-card card-c">🏛️ GeM Expert</div>
+          <div class="floating-card card-a">🧾 GST &amp; Accounting</div>
+          <div class="floating-card card-b">🦀 Rust · Go · Python</div>
+          <div class="floating-card card-c">🏛️ GeM tools</div>
         </div>
       </div>
       <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
     </section>
 
-    <!-- ============ ABOUT ============ -->
     <section class="section" id="about">
       <div class="container">
         <div class="section-head reveal">
-          <span class="tag">About Me</span>
+          <span class="tag">About</span>
           <h2>Who I <span class="gradient-text">Am</span></h2>
         </div>
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              Main ek passionate <strong>web developer</strong> aur <strong>digital solutions consultant</strong>
-              hoon, Delhi, India se. Mera goal hai small businesses, startups aur professionals ko
-              technology ki madad se online grow karna.
+              I'm <strong>Sumit</strong> — <strong>Sumitrcs</strong> on GitHub — a developer based in Delhi.
+              Half of my work is practical software for Indian businesses: <strong>GST invoicing</strong>,
+              <strong>bank reconciliation</strong>, <strong>Tally Prime</strong> integration and
+              <strong>GeM</strong> bid analysis. The other half is learning computer science by building it:
+              a <strong>key-value database</strong>, an <strong>HTTP server</strong> and a
+              <strong>compressor</strong> in Rust, a <strong>programming language</strong>, and a
+              <strong>SQL engine</strong>.
             </p>
             <p>
-              Websites aur web apps banane ke saath-saath, main <strong>GST &amp; accounting compliance</strong>,
-              <strong>GeM (Government e-Marketplace)</strong> registration &amp; bidding, aur
-              <strong>SEO / digital marketing</strong> mein bhi clients ki help karta hoon — taaki
-              ek hi jagah par unka poora digital aur compliance kaam ho sake.
+              Everything is open source, tested and documented, with CI on every repository. I care about
+              correctness — exact money arithmetic in paise, time-zone and DST edge cases, crash recovery —
+              and about code other people can read.
             </p>
             <ul class="about-info">
               <li><span>📍 Location</span> Delhi, India</li>
               <li><span>🗣️ Languages</span> Hindi, English</li>
-              <li><span>💼 Freelance</span> Available</li>
-              <li><span>📧 Email</span> <a href="#contact">Contact form</a></li>
+              <li><span>💼 Open to</span> Freelance &amp; full-time</li>
+              <li><span>🐙 GitHub</span> <a href="https://github.com/Sumitrcs" target="_blank" rel="noopener">@Sumitrcs</a></li>
             </ul>
-            <a href="#contact" class="btn btn-primary">Let's Talk</a>
+            <a href="#contact" class="btn btn-primary">Let's talk</a>
           </div>
           <div class="stats reveal">
-            <div class="stat"><h3 class="counter" data-target="5">0</h3><p>Years Experience</p></div>
-            <div class="stat"><h3 class="counter" data-target="100">0</h3><p>Projects Done</p></div>
-            <div class="stat"><h3 class="counter" data-target="80">0</h3><p>Happy Clients</p></div>
-            <div class="stat"><h3 class="counter" data-target="10">0</h3><p>Services Offered</p></div>
+            <div class="stat"><h3 class="counter" data-target="20">0</h3><p>Open-source projects</p></div>
+            <div class="stat"><h3 class="counter" data-target="6">0</h3><p>Programming languages</p></div>
+            <div class="stat"><h3 class="counter" data-target="20">0</h3><p>CI-tested repositories</p></div>
+            <div class="stat"><h3 class="counter" data-target="0" data-suffix="">0</h3><p>Runtime dependencies in most projects</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ SKILLS ============ -->
     <section class="section alt" id="skills">
       <div class="container">
         <div class="section-head reveal">
-          <span class="tag">My Skills</span>
-          <h2>What I <span class="gradient-text">Know</span></h2>
+          <span class="tag">Skills</span>
+          <h2>What I <span class="gradient-text">Work With</span></h2>
         </div>
         <div class="skills-grid">
           <div class="skill-card reveal">
-            <h3>🖥️ Technical</h3>
-            <div class="skill"><div class="skill-top"><span>HTML / CSS</span><span>95%</span></div><div class="bar"><div class="fill" data-width="95"></div></div></div>
-            <div class="skill"><div class="skill-top"><span>JavaScript</span><span>85%</span></div><div class="bar"><div class="fill" data-width="85"></div></div></div>
-            <div class="skill"><div class="skill-top"><span>React / Next.js</span><span>75%</span></div><div class="bar"><div class="fill" data-width="75"></div></div></div>
-            <div class="skill"><div class="skill-top"><span>WordPress / CMS</span><span>90%</span></div><div class="bar"><div class="fill" data-width="90"></div></div></div>
-            <div class="skill"><div class="skill-top"><span>PHP / MySQL</span><span>70%</span></div><div class="bar"><div class="fill" data-width="70"></div></div></div>
+            <h3>🖥️ Engineering</h3>
+            <div class="skill"><div class="skill-top"><span>TypeScript / JavaScript</span><span>Advanced</span></div><div class="bar"><div class="fill" data-width="90"></div></div></div>
+            <div class="skill"><div class="skill-top"><span>Python</span><span>Advanced</span></div><div class="bar"><div class="fill" data-width="88"></div></div></div>
+            <div class="skill"><div class="skill-top"><span>Go</span><span>Advanced</span></div><div class="bar"><div class="fill" data-width="85"></div></div></div>
+            <div class="skill"><div class="skill-top"><span>Rust</span><span>Intermediate</span></div><div class="bar"><div class="fill" data-width="72"></div></div></div>
+            <div class="skill"><div class="skill-top"><span>C</span><span>Intermediate</span></div><div class="bar"><div class="fill" data-width="68"></div></div></div>
           </div>
           <div class="skill-card reveal">
-            <h3>📈 Business &amp; Compliance</h3>
-            <div class="skill"><div class="skill-top"><span>GST Filing &amp; Compliance</span><span>90%</span></div><div class="bar"><div class="fill" data-width="90"></div></div></div>
-            <div class="skill"><div class="skill-top"><span>Tally Prime / Accounting</span><span>88%</span></div><div class="bar"><div class="fill" data-width="88"></div></div></div>
-            <div class="skill"><div class="skill-top"><span>GeM Registration &amp; Bidding</span><span>92%</span></div><div class="bar"><div class="fill" data-width="92"></div></div></div>
-            <div class="skill"><div class="skill-top"><span>SEO &amp; Digital Marketing</span><span>85%</span></div><div class="bar"><div class="fill" data-width="85"></div></div></div>
-            <div class="skill"><div class="skill-top"><span>Graphic Design (Canva / Adobe)</span><span>80%</span></div><div class="bar"><div class="fill" data-width="80"></div></div></div>
+            <h3>📈 Domain</h3>
+            <div class="skill"><div class="skill-top"><span>GST &amp; Indian tax rules</span><span>Advanced</span></div><div class="bar"><div class="fill" data-width="90"></div></div></div>
+            <div class="skill"><div class="skill-top"><span>Accounting &amp; Tally Prime</span><span>Advanced</span></div><div class="bar"><div class="fill" data-width="88"></div></div></div>
+            <div class="skill"><div class="skill-top"><span>GeM procurement</span><span>Advanced</span></div><div class="bar"><div class="fill" data-width="88"></div></div></div>
+            <div class="skill"><div class="skill-top"><span>SEO &amp; web performance</span><span>Advanced</span></div><div class="bar"><div class="fill" data-width="82"></div></div></div>
+            <div class="skill"><div class="skill-top"><span>Algorithms &amp; data structures</span><span>Advanced</span></div><div class="bar"><div class="fill" data-width="85"></div></div></div>
           </div>
         </div>
         <div class="tech-chips reveal">
-          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Node.js</span>
-          <span>WordPress</span><span>PHP</span><span>MySQL</span><span>Git</span><span>Figma</span>
-          <span>Canva</span><span>Tally Prime</span><span>MS Excel</span><span>Google Ads</span><span>SEO</span>
+          <span>TypeScript</span><span>JavaScript</span><span>Node.js</span><span>Python</span><span>asyncio</span><span>Go</span>
+          <span>Rust</span><span>C</span><span>SQLite</span><span>SQL</span><span>HTML5</span><span>CSS3</span><span>Canvas</span>
+          <span>Git</span><span>GitHub Actions</span><span>Linux</span><span>Tally Prime</span><span>WordPress</span>
         </div>
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
-    <section class="section" id="services">
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Open source</span>
+          <h2>20 <span class="gradient-text">Projects</span></h2>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="fintech">FinTech &amp; GST</button>
+          <button class="filter" data-filter="systems">Systems</button>
+          <button class="filter" data-filter="tools">Dev tools</button>
+          <button class="filter" data-filter="web">Web apps</button>
+        </div>
+        <div class="projects-grid">
+          <article class="project reveal" data-category="fintech">
+            <div class="project-thumb" style="--c1:#0f9d76;--c2:#00cec9" aria-hidden="true">🧾</div>
+            <div class="project-body">
+              <h3>GST Invoice Engine</h3>
+              <p>Paise-exact GST invoices: CGST/SGST/UTGST/IGST by place of supply, SEZ &amp; exports, cess, HSN summary, round-off and amount in words.</p>
+              <div class="project-tags"><span>TypeScript</span><span>GST</span><span>Billing</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/gst-invoice-engine" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="fintech">
+            <div class="project-thumb" style="--c1:#0f9d76;--c2:#00cec9" aria-hidden="true">🪪</div>
+            <div class="project-body">
+              <h3>India KYC Validators</h3>
+              <p>Zero-dependency validators for GSTIN (mod-36 checksum), PAN, TAN, IFSC, Aadhaar (Verhoeff), UPI, PIN code and vehicle numbers.</p>
+              <div class="project-tags"><span>TypeScript</span><span>Validation</span><span>KYC</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/india-kyc-validators" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="fintech">
+            <div class="project-thumb" style="--c1:#0f9d76;--c2:#00cec9" aria-hidden="true">💰</div>
+            <div class="project-body">
+              <h3>Income Tax Calculator</h3>
+              <p>Old vs new regime for FY 2025-26 with 87A marginal relief, surcharge relief, HRA and break-even deductions. Live web app.</p>
+              <div class="project-tags"><span>JavaScript</span><span>Tax</span><span>Web app</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/india-income-tax" target="_blank" rel="noopener">Source code</a><a href="https://sumitrcs.github.io/india-income-tax/" target="_blank" rel="noopener">Live demo →</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="fintech">
+            <div class="project-thumb" style="--c1:#0f9d76;--c2:#00cec9" aria-hidden="true">🏦</div>
+            <div class="project-body">
+              <h3>Bank Reconciliation</h3>
+              <p>Five-pass matching (UTR/cheque, date window, fuzzy narration, split deposits) that produces a ready Bank Reconciliation Statement.</p>
+              <div class="project-tags"><span>Python</span><span>Accounting</span><span>Matching</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/bank-recon" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="fintech">
+            <div class="project-thumb" style="--c1:#0f9d76;--c2:#00cec9" aria-hidden="true">🔁</div>
+            <div class="project-body">
+              <h3>Tally XML Bridge</h3>
+              <p>Spreadsheets to Tally Prime import XML (vouchers, GST sales, ledger masters) and Tally exports back to CSV, with validation.</p>
+              <div class="project-tags"><span>Python</span><span>Tally Prime</span><span>XML</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/tally-xml-bridge" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="fintech">
+            <div class="project-thumb" style="--c1:#0f9d76;--c2:#00cec9" aria-hidden="true">🏛️</div>
+            <div class="project-body">
+              <h3>GeM Bid Analyzer</h3>
+              <p>Eligibility go/no-go with document checklist, L1 ranking with MSE &amp; Make-in-India preference, and price advice from past awards.</p>
+              <div class="project-tags"><span>Python</span><span>GeM</span><span>Procurement</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/gem-bid-analyzer" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="fintech">
+            <div class="project-thumb" style="--c1:#0f9d76;--c2:#00cec9" aria-hidden="true">📒</div>
+            <div class="project-body">
+              <h3>ledger-cli</h3>
+              <p>Plain-text double-entry accounting: balance assertions, trial balance, P&amp;L and balance sheet with Indian number formatting.</p>
+              <div class="project-tags"><span>Go</span><span>Accounting</span><span>CLI</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/ledger-cli" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="systems">
+            <div class="project-thumb" style="--c1:#6c5ce7;--c2:#a29bfe" aria-hidden="true">🗄️</div>
+            <div class="project-body">
+              <h3>LSM-tree Key-Value Store</h3>
+              <p>Crash-safe storage engine: write-ahead log, skip-list memtable, SSTables with sparse index and Bloom filters, compaction, manifest.</p>
+              <div class="project-tags"><span>Go</span><span>Database</span><span>Storage</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/lsm-kv" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="systems">
+            <div class="project-thumb" style="--c1:#6c5ce7;--c2:#a29bfe" aria-hidden="true">🦀</div>
+            <div class="project-body">
+              <h3>rhttp — HTTP/1.1 Server</h3>
+              <p>HTTP server from scratch with std only: thread pool, keep-alive and pipelining, router with params, static files with ETags.</p>
+              <div class="project-tags"><span>Rust</span><span>Networking</span><span>HTTP</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/rhttp" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="systems">
+            <div class="project-thumb" style="--c1:#6c5ce7;--c2:#a29bfe" aria-hidden="true">🗜️</div>
+            <div class="project-body">
+              <h3>rzip Compressor</h3>
+              <p>LZ77 with hash chains + canonical length-limited Huffman coding and CRC-32. Matches gzip&#x27;s compression ratio.</p>
+              <div class="project-tags"><span>Rust</span><span>Compression</span><span>Algorithms</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/rzip" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="systems">
+            <div class="project-thumb" style="--c1:#6c5ce7;--c2:#a29bfe" aria-hidden="true">🧩</div>
+            <div class="project-body">
+              <h3>Dancing Links Solver</h3>
+              <p>Knuth&#x27;s Algorithm X with Dancing Links in C11: generic exact cover, Sudoku up to 25×25 and N-Queens. Sanitizer-clean.</p>
+              <div class="project-tags"><span>C</span><span>Algorithms</span><span>Backtracking</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/dlx-solver" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="systems">
+            <div class="project-thumb" style="--c1:#6c5ce7;--c2:#a29bfe" aria-hidden="true">🔤</div>
+            <div class="project-body">
+              <h3>tinylang Interpreter</h3>
+              <p>A small programming language: hand-written lexer, Pratt parser, closures, maps, ranges, string interpolation and a REPL.</p>
+              <div class="project-tags"><span>TypeScript</span><span>Compiler</span><span>Interpreter</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/tinylang" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="systems">
+            <div class="project-thumb" style="--c1:#6c5ce7;--c2:#a29bfe" aria-hidden="true">🔎</div>
+            <div class="project-body">
+              <h3>csvql — SQL on CSV</h3>
+              <p>A query engine for CSV files: joins (hash + nested loop), GROUP BY, HAVING, CASE, LIKE and three-valued NULL logic.</p>
+              <div class="project-tags"><span>Python</span><span>SQL</span><span>Query engine</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/csvql" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="tools">
+            <div class="project-thumb" style="--c1:#0984e3;--c2:#74b9ff" aria-hidden="true">🚦</div>
+            <div class="project-body">
+              <h3>ratelimit-go</h3>
+              <p>Token bucket, fixed &amp; sliding window and GCRA behind one API, with 64-shard locking and net/http middleware.</p>
+              <div class="project-tags"><span>Go</span><span>Backend</span><span>Middleware</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/ratelimit-go" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="tools">
+            <div class="project-thumb" style="--c1:#0984e3;--c2:#74b9ff" aria-hidden="true">⚙️</div>
+            <div class="project-body">
+              <h3>taskq Job Queue</h3>
+              <p>Durable background jobs on SQLite: atomic claims, leases with heartbeats, backoff with jitter, dead-letter queue, asyncio workers.</p>
+              <div class="project-tags"><span>Python</span><span>asyncio</span><span>SQLite</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/taskq" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="tools">
+            <div class="project-thumb" style="--c1:#0984e3;--c2:#74b9ff" aria-hidden="true">⏰</div>
+            <div class="project-body">
+              <h3>cronkit</h3>
+              <p>Cron parser and scheduler with seconds, L, nth weekday, IANA time zones and correct DST handling, plus plain-English descriptions.</p>
+              <div class="project-tags"><span>TypeScript</span><span>Scheduling</span><span>Time zones</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/cronkit" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="tools">
+            <div class="project-thumb" style="--c1:#0984e3;--c2:#74b9ff" aria-hidden="true">📝</div>
+            <div class="project-body">
+              <h3>textdiff</h3>
+              <p>Myers O(ND) diff, git-compatible unified diffs, offset-tolerant patching, diff3 three-way merge and word-level diffs.</p>
+              <div class="project-tags"><span>TypeScript</span><span>Algorithms</span><span>Git</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/textdiff" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="tools">
+            <div class="project-thumb" style="--c1:#0984e3;--c2:#74b9ff" aria-hidden="true">🕷️</div>
+            <div class="project-body">
+              <h3>sitecrawler</h3>
+              <p>Polite concurrent crawler: robots.txt (RFC 9309), per-host rate limits, broken-link report and sitemap.xml generation.</p>
+              <div class="project-tags"><span>Go</span><span>SEO</span><span>Concurrency</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/sitecrawler" target="_blank" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="web">
+            <div class="project-thumb" style="--c1:#e17055;--c2:#fdcb6e" aria-hidden="true">🧭</div>
+            <div class="project-body">
+              <h3>Pathfinding Visualiser</h3>
+              <p>Watch A*, Dijkstra, BFS, bidirectional BFS, greedy and DFS search a weighted grid; animated maze generation. Live demo.</p>
+              <div class="project-tags"><span>JavaScript</span><span>Canvas</span><span>Algorithms</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/pathfinder-visualizer" target="_blank" rel="noopener">Source code</a><a href="https://sumitrcs.github.io/pathfinder-visualizer/" target="_blank" rel="noopener">Live demo →</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-category="web">
+            <div class="project-thumb" style="--c1:#e17055;--c2:#fdcb6e" aria-hidden="true">🤝</div>
+            <div class="project-body">
+              <h3>Settle Up</h3>
+              <p>Split group expenses four ways and settle with the provably minimum number of payments (bitmask DP). Offline, shareable by link.</p>
+              <div class="project-tags"><span>JavaScript</span><span>Web app</span><span>Algorithms</span></div>
+              <div class="project-links"><a href="https://github.com/Sumitrcs/settle-up" target="_blank" rel="noopener">Source code</a><a href="https://sumitrcs.github.io/settle-up/" target="_blank" rel="noopener">Live demo →</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="services">
       <div class="container">
         <div class="section-head reveal">
           <span class="tag">Services</span>
-          <h2>What I <span class="gradient-text">Offer</span></h2>
+          <h2>How I Can <span class="gradient-text">Help</span></h2>
         </div>
         <div class="services-grid">
-          <div class="service reveal"><div class="service-icon">🌐</div><h3>Website Development</h3><p>Fast, responsive, SEO-friendly websites — business sites, landing pages, e-commerce stores.</p></div>
-          <div class="service reveal"><div class="service-icon">📱</div><h3>App Development</h3><p>Android, iOS aur cross-platform apps — idea se Play Store / App Store launch tak.</p></div>
-          <div class="service reveal"><div class="service-icon">🧾</div><h3>GST &amp; Accounting</h3><p>GSTR-1, GSTR-3B filing, Tally entries, bank reconciliation aur monthly bookkeeping.</p></div>
-          <div class="service reveal"><div class="service-icon">🏛️</div><h3>GeM Services</h3><p>GeM seller registration, catalogue upload, bid participation aur reverse auction support.</p></div>
-          <div class="service reveal"><div class="service-icon">🚀</div><h3>SEO &amp; Marketing</h3><p>Google ranking, Google Business Profile, social media management aur ad campaigns.</p></div>
-          <div class="service reveal"><div class="service-icon">🎨</div><h3>Graphic Design</h3><p>Logos, branding, social media creatives, brochures aur visiting cards.</p></div>
+          <div class="service reveal"><div class="service-icon">🌐</div><h3>Websites &amp; web apps</h3><p>Fast, accessible, SEO-friendly sites and custom web applications.</p></div>
+          <div class="service reveal"><div class="service-icon">🧾</div><h3>GST &amp; billing software</h3><p>Invoicing, e-invoice data, reconciliation and reports built around Indian tax rules.</p></div>
+          <div class="service reveal"><div class="service-icon">🔁</div><h3>Tally integrations</h3><p>Import vouchers and masters from Excel, sync with other systems, automate month-end work.</p></div>
+          <div class="service reveal"><div class="service-icon">🏛️</div><h3>GeM tools &amp; support</h3><p>Eligibility screening, bid evaluation and pricing analysis for government tenders.</p></div>
+          <div class="service reveal"><div class="service-icon">⚙️</div><h3>Backend &amp; automation</h3><p>APIs, background jobs, scheduled tasks, crawlers and data pipelines.</p></div>
+          <div class="service reveal"><div class="service-icon">🚀</div><h3>SEO audits</h3><p>Technical SEO: broken links, sitemaps, robots.txt and page speed.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ============ PROJECTS ============ -->
-    <section class="section alt" id="projects">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="tag">Portfolio</span>
-          <h2>Recent <span class="gradient-text">Projects</span></h2>
-        </div>
-        <div class="filters reveal">
-          <button class="filter active" data-filter="all">All</button>
-          <button class="filter" data-filter="web">Web</button>
-          <button class="filter" data-filter="app">App</button>
-          <button class="filter" data-filter="design">Design</button>
-          <button class="filter" data-filter="marketing">Marketing</button>
-        </div>
-        <div class="projects-grid">
-          <article class="project reveal" data-category="web">
-            <div class="project-thumb" style="--c1:#6c5ce7;--c2:#00cec9">🏢</div>
-            <div class="project-body">
-              <h3>Business Services Website</h3>
-              <p>Multi-service company website with service pages, enquiry forms and SEO setup.</p>
-              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-              <div class="project-links"><a href="#">Live Demo →</a><a href="#">Code</a></div>
-            </div>
-          </article>
-          <article class="project reveal" data-category="web">
-            <div class="project-thumb" style="--c1:#fd79a8;--c2:#fdcb6e">🛒</div>
-            <div class="project-body">
-              <h3>E-Commerce Store</h3>
-              <p>Online store with product catalogue, cart, payment gateway and order management.</p>
-              <div class="project-tags"><span>WordPress</span><span>WooCommerce</span></div>
-              <div class="project-links"><a href="#">Live Demo →</a><a href="#">Code</a></div>
-            </div>
-          </article>
-          <article class="project reveal" data-category="app">
-            <div class="project-thumb" style="--c1:#0984e3;--c2:#74b9ff">📒</div>
-            <div class="project-body">
-              <h3>Accounting Helper App</h3>
-              <p>Simple app to track invoices, GST due dates and payment reminders for small businesses.</p>
-              <div class="project-tags"><span>React</span><span>Node.js</span></div>
-              <div class="project-links"><a href="#">Live Demo →</a><a href="#">Code</a></div>
-            </div>
-          </article>
-          <article class="project reveal" data-category="app">
-            <div class="project-thumb" style="--c1:#00b894;--c2:#55efc4">🎓</div>
-            <div class="project-body">
-              <h3>Online Course Platform</h3>
-              <p>Learning platform with video lessons, quizzes and student dashboard.</p>
-              <div class="project-tags"><span>Next.js</span><span>MySQL</span></div>
-              <div class="project-links"><a href="#">Live Demo →</a><a href="#">Code</a></div>
-            </div>
-          </article>
-          <article class="project reveal" data-category="design">
-            <div class="project-thumb" style="--c1:#e17055;--c2:#fab1a0">🎨</div>
-            <div class="project-body">
-              <h3>Brand Identity Kit</h3>
-              <p>Logo, colour palette, visiting cards and social media templates for a local brand.</p>
-              <div class="project-tags"><span>Canva</span><span>Illustrator</span></div>
-              <div class="project-links"><a href="#">View →</a></div>
-            </div>
-          </article>
-          <article class="project reveal" data-category="marketing">
-            <div class="project-thumb" style="--c1:#a29bfe;--c2:#6c5ce7">📈</div>
-            <div class="project-body">
-              <h3>Local SEO Campaign</h3>
-              <p>Google Business Profile optimisation and local SEO that brought a client to page 1.</p>
-              <div class="project-tags"><span>SEO</span><span>GBP</span></div>
-              <div class="project-links"><a href="#">Case Study →</a></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ EXPERIENCE ============ -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="tag">Journey</span>
-          <h2>Experience &amp; <span class="gradient-text">Education</span></h2>
-        </div>
-        <div class="timeline">
-          <div class="tl-item reveal">
-            <div class="tl-dot"></div>
-            <div class="tl-content">
-              <span class="tl-date">2023 – Present</span>
-              <h3>Founder &amp; Digital Consultant</h3>
-              <h4>Freelance / Own Business</h4>
-              <p>Clients ke liye websites, apps, GST compliance, GeM services aur digital marketing handle karna.</p>
-            </div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-dot"></div>
-            <div class="tl-content">
-              <span class="tl-date">2021 – 2023</span>
-              <h3>Web Developer</h3>
-              <h4>IT Services Company</h4>
-              <p>Responsive websites, WordPress projects aur client maintenance work.</p>
-            </div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-dot"></div>
-            <div class="tl-content">
-              <span class="tl-date">2018 – 2021</span>
-              <h3>Graduation</h3>
-              <h4>University, Delhi</h4>
-              <p>Commerce / Computer Applications background with focus on accounting and programming.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ TESTIMONIALS ============ -->
-    <section class="section alt" id="testimonials">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="tag">Testimonials</span>
-          <h2>Clients <span class="gradient-text">Say</span></h2>
-        </div>
-        <div class="testimonials-grid">
-          <blockquote class="testimonial reveal">
-            <p>"Website time par deliver hui aur design bahut professional hai. Enquiries pehle se double ho gayi!"</p>
-            <footer><strong>Rahul S.</strong><span>Business Owner</span></footer>
-          </blockquote>
-          <blockquote class="testimonial reveal">
-            <p>"GeM registration aur pehli bid mein poora support mila. Highly recommended."</p>
-            <footer><strong>Priya M.</strong><span>Supplier</span></footer>
-          </blockquote>
-          <blockquote class="testimonial reveal">
-            <p>"GST filing ki tension khatam. Har month time par sab ho jata hai."</p>
-            <footer><strong>Amit K.</strong><span>Retailer</span></footer>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
     <section class="section" id="contact">
       <div class="container">
         <div class="section-head reveal">
@@ -317,19 +381,19 @@
         </div>
         <div class="contact-grid">
           <div class="contact-info reveal">
-            <p>Koi project hai, ya bas baat karni hai? Message bhejiye — main 24 ghante mein reply karta hoon.</p>
-            <div class="info-item"><span>📧</span><div><h4>Email</h4><a href="mailto:you@example.com">you@example.com</a></div></div>
-            <div class="info-item"><span>📞</span><div><h4>Phone / WhatsApp</h4><a href="tel:+910000000000">+91 00000 00000</a></div></div>
+            <p>Have a project in mind, or want to talk about one of mine? Send a message — I usually reply within a day.</p>
+            <div class="info-item"><span>🐙</span><div><h4>GitHub</h4><a href="https://github.com/Sumitrcs" target="_blank" rel="noopener">github.com/Sumitrcs</a></div></div>
+            <div class="info-item"><span>📧</span><div><h4>Email</h4><a id="emailLink" href="mailto:you@example.com">you@example.com</a></div></div>
             <div class="info-item"><span>📍</span><div><h4>Location</h4><p>Delhi, India</p></div></div>
           </div>
           <form class="contact-form reveal" id="contactForm">
             <div class="form-row">
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email" required />
+              <input type="text" name="name" placeholder="Your name" aria-label="Your name" required />
+              <input type="email" name="email" placeholder="Your email" aria-label="Your email" required />
             </div>
-            <input type="text" name="subject" placeholder="Subject" required />
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-primary">Send Message ✉️</button>
+            <input type="text" name="subject" placeholder="Subject" aria-label="Subject" required />
+            <textarea name="message" rows="5" placeholder="Your message" aria-label="Your message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send message ✉️</button>
             <p class="form-status" id="formStatus" role="status"></p>
           </form>
         </div>
@@ -339,7 +403,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Sumit. Made with ❤️ in India.</p>
+      <p>© <span id="year"></span> Sumit (Sumitrcs) · Delhi, India</p>
       <a href="#home" class="back-top" aria-label="Back to top">↑</a>
     </div>
   </footer>

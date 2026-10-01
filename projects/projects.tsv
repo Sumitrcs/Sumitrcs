@@ -1,0 +1,20 @@
+gst-invoice-engine	Paise-exact GST invoices: CGST/SGST/UTGST/IGST by place of supply, SEZ & exports, cess, HSN summary, round-off and amount in words.	gst,invoice,india,billing,typescript,tax	
+india-kyc-validators	Zero-dependency validators for GSTIN (mod-36 checksum), PAN, TAN, IFSC, Aadhaar (Verhoeff), UPI, PIN code and vehicle numbers.	gstin,pan,aadhaar,ifsc,upi,validation,india,typescript	
+india-income-tax	Old vs new regime for FY 2025-26 with 87A marginal relief, surcharge relief, HRA and break-even deductions. Live web app.	income-tax,india,calculator,new-regime,javascript	pages
+bank-recon	Five-pass matching (UTR/cheque, date window, fuzzy narration, split deposits) that produces a ready Bank Reconciliation Statement.	accounting,bank-reconciliation,brs,finance,python,india	
+tally-xml-bridge	Spreadsheets to Tally Prime import XML (vouchers, GST sales, ledger masters) and Tally exports back to CSV, with validation.	tally,tally-prime,accounting,gst,xml,python	
+gem-bid-analyzer	Eligibility go/no-go with document checklist, L1 ranking with MSE & Make-in-India preference, and price advice from past awards.	gem,government-e-marketplace,tender,procurement,msme,python	
+ledger-cli	Plain-text double-entry accounting: balance assertions, trial balance, P&L and balance sheet with Indian number formatting.	accounting,double-entry,plain-text-accounting,cli,golang	
+lsm-kv	Crash-safe storage engine: write-ahead log, skip-list memtable, SSTables with sparse index and Bloom filters, compaction, manifest.	database,lsm-tree,key-value-store,storage-engine,bloom-filter,golang	
+rhttp	HTTP server from scratch with std only: thread pool, keep-alive and pipelining, router with params, static files with ETags.	http,server,rust,networking,from-scratch,web-server	
+rzip	LZ77 with hash chains + canonical length-limited Huffman coding and CRC-32. Matches gzip's compression ratio.	compression,lz77,huffman,deflate,rust,cli	
+dlx-solver	Knuth's Algorithm X with Dancing Links in C11: generic exact cover, Sudoku up to 25×25 and N-Queens. Sanitizer-clean.	dancing-links,algorithm-x,exact-cover,sudoku,n-queens,c	
+tinylang	A small programming language: hand-written lexer, Pratt parser, closures, maps, ranges, string interpolation and a REPL.	interpreter,programming-language,pratt-parser,compiler,typescript,repl	
+csvql	A query engine for CSV files: joins (hash + nested loop), GROUP BY, HAVING, CASE, LIKE and three-valued NULL logic.	sql,csv,query-engine,parser,database,python	
+ratelimit-go	Token bucket, fixed & sliding window and GCRA behind one API, with 64-shard locking and net/http middleware.	rate-limiting,gcra,token-bucket,middleware,golang,api	
+taskq	Durable background jobs on SQLite: atomic claims, leases with heartbeats, backoff with jitter, dead-letter queue, asyncio workers.	job-queue,background-jobs,asyncio,sqlite,worker,python	
+cronkit	Cron parser and scheduler with seconds, L, nth weekday, IANA time zones and correct DST handling, plus plain-English descriptions.	cron,scheduler,timezone,dst,typescript,crontab	
+textdiff	Myers O(ND) diff, git-compatible unified diffs, offset-tolerant patching, diff3 three-way merge and word-level diffs.	diff,myers,patch,merge,diff3,typescript	
+sitecrawler	Polite concurrent crawler: robots.txt (RFC 9309), per-host rate limits, broken-link report and sitemap.xml generation.	crawler,seo,sitemap,robots-txt,broken-links,golang	
+pathfinder-visualizer	Watch A*, Dijkstra, BFS, bidirectional BFS, greedy and DFS search a weighted grid; animated maze generation. Live demo.	pathfinding,a-star,dijkstra,visualization,maze,javascript	pages
+settle-up	Split group expenses four ways and settle with the provably minimum number of payments (bitmask DP). Offline, shareable by link.	expense-splitter,splitwise,algorithms,javascript,web-app	pages

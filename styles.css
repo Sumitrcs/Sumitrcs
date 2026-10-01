@@ -181,7 +181,7 @@ img { max-width: 100%; display: block; }
 }
 .stat:hover { transform: translateY(-6px); }
 .stat h3 { font-size: 2.6rem; font-weight: 800; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.stat h3::after { content: "+"; }
+.stat h3::after { content: attr(data-suffix); }
 .stat p { color: var(--muted); font-size: 0.9rem; }
 
 /* ========== SKILLS ========== */
@@ -234,7 +234,7 @@ img { max-width: 100%; display: block; }
 .project:hover { transform: translateY(-8px); box-shadow: var(--shadow); }
 .project.hide { display: none; }
 .project-thumb {
-  height: 190px; display: grid; place-items: center; font-size: 4rem;
+  height: 150px; display: grid; place-items: center; font-size: 4rem;
   background: linear-gradient(135deg, var(--c1), var(--c2));
   transition: transform 0.4s;
 }
@@ -247,7 +247,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.75rem; padding: 3px 10px; border-radius: 20px; font-weight: 500;
   color: var(--primary); background: color-mix(in srgb, var(--primary) 10%, transparent);
 }
-.project-links { display: flex; gap: 18px; font-size: 0.9rem; font-weight: 600; }
+.project-links { display: flex; gap: 18px; font-size: 0.9rem; font-weight: 600; flex-wrap: wrap; }
 .project-links a { color: var(--primary); }
 .project-links a:hover { text-decoration: underline; }
 
