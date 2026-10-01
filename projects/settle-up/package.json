@@ -1,0 +1,14 @@
+{
+  "name": "settle-up",
+  "version": "1.0.0",
+  "description": "Split group expenses fairly and settle with the provably minimum number of payments. Offline-first, no sign-up, shareable by link.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "npx --yes serve ."
+  },
+  "keywords": ["expense-splitter", "splitwise", "debt-simplification", "algorithms", "pwa", "javascript"],
+  "author": "Sumit (https://github.com/Sumitrcs)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Sumitrcs/settle-up.git" }
+}

@@ -1,0 +1,97 @@
+:root {
+  --bg: #f6f7fb;
+  --card: #fff;
+  --text: #111827;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --brand: #0f9d76;
+  --pos: #0f9d76;
+  --neg: #e11d48;
+  --chip: #eef2f7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1016;
+    --card: #131a23;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --line: #243040;
+    --chip: #1d2733;
+    --pos: #34d399;
+    --neg: #fb7185;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+
+header {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;
+  padding: 14px 16px; background: var(--card); border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 2;
+}
+.title { font-size: 1.3rem; font-weight: 700; border: 0; background: transparent; color: var(--text); padding: 4px 0; min-width: 0; flex: 1; }
+.title:focus { outline: 2px solid var(--brand); outline-offset: 4px; border-radius: 4px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+main {
+  max-width: 1040px; margin: 0 auto; padding: 16px;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;
+}
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; min-width: 0; }
+.card.wide { grid-column: 1 / -1; }
+h2 { margin: 0 0 12px; font-size: 1rem; }
+
+input, select, button, .button {
+  font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line);
+  border-radius: 9px; padding: 8px 11px; min-width: 0;
+}
+button, .button { cursor: pointer; white-space: nowrap; }
+button:hover, .button:hover { border-color: var(--brand); }
+button.primary { background: var(--brand); color: #fff; border-color: var(--brand); font-weight: 600; width: 100%; }
+button.danger:hover { border-color: var(--neg); color: var(--neg); }
+.row { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+.row > input { flex: 1 1 140px; }
+.row label { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 0.9rem; }
+
+.chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.chips li { background: var(--chip); border-radius: 99px; padding: 4px 6px 4px 12px; display: flex; align-items: center; gap: 6px; }
+.chips button { border: 0; background: transparent; padding: 0 6px; color: var(--muted); }
+
+.split { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; margin-bottom: 8px; }
+.split label { display: flex; align-items: center; gap: 8px; background: var(--chip); padding: 6px 10px; border-radius: 9px; }
+.split input[type="number"] { width: 100%; padding: 4px 6px; }
+
+.list { list-style: none; padding: 0; margin: 0; }
+.list li { display: flex; gap: 10px; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.list li:last-child { border-bottom: 0; }
+.list .meta { color: var(--muted); font-size: 0.85rem; }
+.list button { padding: 4px 10px; font-size: 0.85rem; }
+
+.bal { display: grid; grid-template-columns: 90px 1fr 100px; gap: 10px; align-items: center; margin: 6px 0; }
+.bal .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bal .track { position: relative; height: 10px; background: var(--chip); border-radius: 6px; }
+.bal .bar { position: absolute; top: 0; bottom: 0; border-radius: 6px; }
+.bal .bar.pos { left: 50%; background: var(--pos); }
+.bal .bar.neg { right: 50%; background: var(--neg); }
+.bal .amt { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+.pos { color: var(--pos); }
+.neg { color: var(--neg); }
+
+.muted { color: var(--muted); font-weight: 400; }
+.small { font-size: 0.85rem; }
+.error { color: var(--neg); min-height: 1.2em; margin: 4px 0; font-size: 0.9rem; }
+.empty { color: var(--muted); font-style: italic; }
+
+#toast {
+  position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%) translateY(20px);
+  background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 10px; opacity: 0;
+  transition: opacity 0.2s, transform 0.2s; pointer-events: none;
+}
+#toast.show { opacity: 1; transform: translateX(-50%); }
+
+@media (max-width: 760px) {
+  main { grid-template-columns: 1fr; }
+  .bal { grid-template-columns: 70px 1fr 90px; }
+}
