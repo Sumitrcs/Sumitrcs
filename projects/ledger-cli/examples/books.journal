@@ -1,0 +1,52 @@
+; Sample books for a small freelance studio, FY 2026-27
+
+account Assets:Bank:HDFC
+account Assets:Cash
+account Assets:Receivables:Acme
+account Liabilities:GST:Output
+account Liabilities:CreditCard
+account Equity:Capital
+account Income:Services:Web
+account Income:Services:Consulting
+account Expenses:Rent
+account Expenses:Software
+account Expenses:Internet
+account Expenses:Travel
+
+2026-04-01 * Capital introduced
+    Assets:Bank:HDFC           2,00,000.00
+    Equity:Capital
+
+2026-04-02 * Office rent — April
+    Expenses:Rent                18,000
+    Assets:Bank:HDFC             = 1,82,000.00
+
+2026-04-05 * Acme Corp — website (invoice RCS/2026-27/0001)
+    Assets:Receivables:Acme      59,000
+    Income:Services:Web         -50,000
+    Liabilities:GST:Output       -9,000
+
+2026-04-10 * Figma + hosting
+    Expenses:Software             4,250.50
+    Liabilities:CreditCard
+
+2026-04-15 * ATM withdrawal
+    Assets:Cash                   5,000
+    Assets:Bank:HDFC
+
+2026-04-18 * Acme Corp payment received
+    Assets:Bank:HDFC             59,000
+    Assets:Receivables:Acme
+
+2026-04-20 ! Cab to client meeting  ; reimbursement pending
+    Expenses:Travel                 640
+    Assets:Cash
+
+2026-04-25 * Consulting session
+    Assets:Bank:HDFC             11,800
+    Income:Services:Consulting  -10,000
+    Liabilities:GST:Output       -1,800
+
+2026-04-30 * Broadband
+    Expenses:Internet               999
+    Assets:Bank:HDFC             = 2,46,801.00

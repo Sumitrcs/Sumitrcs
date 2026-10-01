@@ -1,0 +1,5 @@
+/bin/
+*.test
+*.out
+coverage.html
+.DS_Store
