@@ -1,5 +1,7 @@
 # tinylang
 
+[![CI](https://github.com/Sumitrcs/tinylang/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/tinylang/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A small, expression-oriented programming language with first-class functions,
 closures, maps, ranges and string interpolation — implemented from scratch in
 TypeScript with **zero dependencies**: a hand-written lexer, a **Pratt

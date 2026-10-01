@@ -1,5 +1,7 @@
 # Settle Up
 
+[![CI](https://github.com/Sumitrcs/settle-up/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/settle-up/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Split trip, flat or office expenses fairly — then pay everyone back in the
 **provably minimum number of transfers**. No sign-up, no server: everything
 lives in your browser, and a group can be shared as a single link.

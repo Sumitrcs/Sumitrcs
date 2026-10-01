@@ -1,11 +1,13 @@
 # dlx-solver
 
+[![CI](https://github.com/Sumitrcs/dlx-solver/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/dlx-solver/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 **Knuth's Algorithm X with Dancing Links**, implemented in portable C11 with
 no dependencies, plus two classic applications built on top of it: a
 **Sudoku solver** (4×4 up to 25×25) and an **N-Queens** counter.
 
 ```
-$ ./build/dlx sudoku --pretty < puzzles/hard.txt      # "AI Escargot"
+$ ./build/dlx sudoku --pretty < puzzles/hard.txt      # first puzzle in the file
 1 6 2 | 8 5 7 | 4 9 3
 5 3 4 | 1 2 9 | 6 7 8
 7 8 9 | 6 4 3 | 5 2 1

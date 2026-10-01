@@ -1,5 +1,7 @@
 # rzip
 
+[![CI](https://github.com/Sumitrcs/rzip/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/rzip/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A lossless file compressor written **from scratch in Rust** — no compression
 crates, no dependencies. It implements the two classic ideas behind zip,
 gzip and PNG: **LZ77** back-references and **Huffman coding** — and reaches

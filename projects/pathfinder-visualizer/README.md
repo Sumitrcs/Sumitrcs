@@ -1,5 +1,7 @@
 # Pathfinder — search algorithm visualiser
 
+[![CI](https://github.com/Sumitrcs/pathfinder-visualizer/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/pathfinder-visualizer/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Draw walls and mud, generate a maze, then watch **A\***, **Dijkstra**,
 **BFS**, **bidirectional BFS**, **greedy best-first** and **DFS** explore the
 grid in real time. Built with plain JavaScript modules and `<canvas>` — no

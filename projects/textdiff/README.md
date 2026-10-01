@@ -1,5 +1,7 @@
 # textdiff
 
+[![CI](https://github.com/Sumitrcs/textdiff/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/textdiff/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 The core of `diff`, `patch` and `git merge`, re-implemented in TypeScript with
 zero dependencies:
 

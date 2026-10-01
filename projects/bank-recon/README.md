@@ -1,5 +1,7 @@
 # bank-recon
 
+[![CI](https://github.com/Sumitrcs/bank-recon/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/bank-recon/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 **Automatic bank reconciliation** for small businesses and accountants.
 Feed it a bank statement and the bank ledger from your books (Tally, Busy,
 Zoho — any CSV export) and it matches the entries and prints a

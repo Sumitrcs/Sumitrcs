@@ -1,5 +1,7 @@
 # ratelimit-go
 
+[![CI](https://github.com/Sumitrcs/ratelimit-go/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/ratelimit-go/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Production-style **rate limiting for Go** with four algorithms behind one
 interface, per-key limits, sharded locking and a drop-in `net/http`
 middleware. No dependencies.

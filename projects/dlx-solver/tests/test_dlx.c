@@ -51,7 +51,7 @@ static void test_queens(void) {
 }
 
 static void test_sudoku(void) {
-    /* "AI Escargot" — a famously hard puzzle. */
+    /* A famously hard puzzle (only 23 clues, needs deep backtracking). */
     const char *hard = "1....7.9..3..2...8..96..5....53..9...1..8...26....4...3......1..4......7..7...3..";
     sudoku_t p, s;
     assert(sudoku_parse(hard, &p) == 0 && p.n == 9);

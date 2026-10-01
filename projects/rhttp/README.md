@@ -1,5 +1,7 @@
 # rhttp
 
+[![CI](https://github.com/Sumitrcs/rhttp/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/rhttp/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 An **HTTP/1.1 server written from scratch in Rust** — no Tokio, no Hyper, no
 dependencies at all. Just `std::net`, a hand-rolled thread pool and a careful
 request parser.

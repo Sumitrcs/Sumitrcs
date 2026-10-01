@@ -1,5 +1,7 @@
 # gem-bid-analyzer
 
+[![CI](https://github.com/Sumitrcs/gem-bid-analyzer/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/gem-bid-analyzer/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A command-line toolkit for suppliers bidding on India's **Government
 e-Marketplace (GeM)**. It answers the three questions every bid team asks:
 

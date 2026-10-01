@@ -1,5 +1,7 @@
 # gst-invoice-engine
 
+[![CI](https://github.com/Sumitrcs/gst-invoice-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/gst-invoice-engine/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A small, dependency-free engine that turns invoice line items into a fully
 computed **Indian GST tax invoice** — exact to the paisa.
 

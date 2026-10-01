@@ -1,5 +1,7 @@
 # tally-xml-bridge
 
+[![CI](https://github.com/Sumitrcs/tally-xml-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/tally-xml-bridge/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Move accounting data between **spreadsheets and Tally Prime** without typing
 a single voucher by hand.
 

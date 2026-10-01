@@ -1,5 +1,7 @@
 # csvql
 
+[![CI](https://github.com/Sumitrcs/csvql/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/csvql/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Run real SQL directly against CSV files — no database to install, no import
 step. A complete little query engine in **pure Python** (no dependencies):
 tokenizer, recursive-descent parser, and an executor with hash joins,

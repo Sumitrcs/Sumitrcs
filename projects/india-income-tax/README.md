@@ -1,5 +1,7 @@
 # india-income-tax
 
+[![CI](https://github.com/Sumitrcs/india-income-tax/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/india-income-tax/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Old vs New regime income tax calculator for **FY 2025-26 (AY 2026-27)** — a
 single static page backed by a pure, fully tested tax engine.
 

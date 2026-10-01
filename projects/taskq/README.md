@@ -1,5 +1,7 @@
 # taskq
 
+[![CI](https://github.com/Sumitrcs/taskq/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/taskq/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 **Durable background jobs for Python — backed by a single SQLite file.**
 No Redis, no RabbitMQ, no extra service to run. Ideal for small SaaS apps,
 internal tools and scripts that need reliable "do this later, and retry if

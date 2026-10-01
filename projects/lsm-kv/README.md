@@ -1,5 +1,7 @@
 # lsm-kv
 
+[![CI](https://github.com/Sumitrcs/lsm-kv/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/lsm-kv/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 An embeddable, crash-safe **key-value storage engine** in pure Go, built on a
 **log-structured merge tree** — the same design behind LevelDB, RocksDB and
 Cassandra. Zero dependencies, about 1,000 lines, heavily commented.

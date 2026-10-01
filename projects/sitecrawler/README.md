@@ -1,5 +1,7 @@
 # sitecrawler
 
+[![CI](https://github.com/Sumitrcs/sitecrawler/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/sitecrawler/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A fast, **polite**, concurrent website crawler in Go. Point it at a site and
 get every page's status, broken links with the page that links to them, the
 slowest pages, and a ready-to-submit `sitemap.xml` — handy for SEO audits and

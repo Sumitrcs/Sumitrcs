@@ -1,5 +1,7 @@
 # cronkit
 
+[![CI](https://github.com/Sumitrcs/cronkit/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/cronkit/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A dependency-free **cron expression parser and scheduler** for Node.js,
 written in TypeScript — with the edge cases most libraries get wrong
 handled and tested.

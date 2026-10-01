@@ -1,5 +1,7 @@
 # ledger-cli
 
+[![CI](https://github.com/Sumitrcs/ledger-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/ledger-cli/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A fast, single-binary **plain-text double-entry accounting** tool written in Go.
 Your books live in a human-readable text file you can version with git; the
 tool validates them and produces a trial balance, P&L and balance sheet.

@@ -1,5 +1,7 @@
 # india-kyc-validators
 
+[![CI](https://github.com/Sumitrcs/india-kyc-validators/actions/workflows/ci.yml/badge.svg)](https://github.com/Sumitrcs/india-kyc-validators/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Zero-dependency TypeScript validators for Indian identifiers. Every validator
 returns a typed result with either decoded information or a list of human
 readable errors — handy for onboarding forms, invoicing software and KYC
