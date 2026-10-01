@@ -91,7 +91,7 @@ def read_gst_sales_csv(path: str | Path, home_state: str, round_off_ledger: str 
         taxable = money(r.get("taxable_value"))
         rate = Decimal(r.get("gst_rate") or "0")
         pos = (r.get("place_of_supply") or home_state).strip()
-        sales_ledger = r.get("sales_ledger") or f"Sales @ {rate.normalize()}%"
+        sales_ledger = r.get("sales_ledger") or f"Sales @ {_num(rate)}%"
         if taxable <= 0:
             raise VoucherError(f"row {i}: taxable_value must be positive")
 
@@ -99,11 +99,11 @@ def read_gst_sales_csv(path: str | Path, home_state: str, round_off_ledger: str 
         if pos.lower() == home_state.lower():
             half = rate / 2
             tax_each = (taxable * half / 100).quantize(PAISA, ROUND_HALF_UP)
-            lines += [LedgerLine(f"Output CGST @ {half.normalize()}%", -tax_each),
-                      LedgerLine(f"Output SGST @ {half.normalize()}%", -tax_each)]
+            lines += [LedgerLine(f"Output CGST @ {_num(half)}%", -tax_each),
+                      LedgerLine(f"Output SGST @ {_num(half)}%", -tax_each)]
         else:
             igst = (taxable * rate / 100).quantize(PAISA, ROUND_HALF_UP)
-            lines.append(LedgerLine(f"Output IGST @ {rate.normalize()}%", -igst))
+            lines.append(LedgerLine(f"Output IGST @ {_num(rate)}%", -igst))
 
         gross = -sum((l.amount for l in lines), Decimal(0))
         total = gross.quantize(Decimal(1), ROUND_HALF_UP)
@@ -162,3 +162,8 @@ def vouchers_to_csv(vouchers: list[Voucher]) -> str:
                 v.narration if idx == 0 else "",
             ])
     return buf.getvalue()
+
+
+def _num(d: Decimal) -> str:
+    """Decimal without trailing zeros or exponent notation: 30.00 -> '30', 2.50 -> '2.5'."""
+    return format(d.normalize(), "f")

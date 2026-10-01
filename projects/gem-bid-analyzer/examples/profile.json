@@ -1,0 +1,14 @@
+{
+  "name": "RCS Informatic",
+  "turnover_by_fy": {"2023-24": 1850000, "2024-25": 2600000, "2025-26": 3400000},
+  "years_in_business": 4,
+  "is_mse": true,
+  "is_startup": false,
+  "local_content_pct": 55,
+  "oem_authorizations": ["Desktop Computer (Acer Veriton)", "Laptop"],
+  "certifications": ["ISO 9001:2015", "BIS Registration for IT equipment"],
+  "past_orders": [
+    {"buyer": "District Education Office", "item": "Desktop Computer", "quantity": 25, "value": 1450000},
+    {"buyer": "Municipal Corporation", "item": "Desktop computer i5", "quantity": 40, "value": 2380000}
+  ]
+}

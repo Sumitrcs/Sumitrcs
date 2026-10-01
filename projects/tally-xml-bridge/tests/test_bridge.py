@@ -122,3 +122,10 @@ def test_cli_end_to_end(tmp_path, capsys):
     assert "Output IGST @ 18%" in capsys.readouterr().out
     assert "<LEDGER" in masters.read_text()
     assert main(["journal", str(tmp_path / "missing.csv")]) == 1
+
+
+def test_ledger_names_never_use_exponent_notation(tmp_path):
+    p = tmp_path / "inv.csv"
+    p.write_text("date,invoice_no,party,taxable_value,gst_rate,place_of_supply\n2026-10-01,A1,X,100,40,Delhi\n")
+    names = {l.ledger for l in read_gst_sales_csv(p, home_state="Delhi")[0].lines}
+    assert {"Sales @ 40%", "Output CGST @ 20%", "Output SGST @ 20%"} <= names
