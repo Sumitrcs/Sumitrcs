@@ -1,0 +1,22 @@
+[package]
+name = "rzip"
+version = "1.0.0"
+edition = "2024"
+description = "A from-scratch lossless compressor: LZ77 with hash chains + canonical Huffman coding, CRC-32 integrity checks and a streaming block format."
+license = "MIT"
+authors = ["Sumit <155360729+Sumitrcs@users.noreply.github.com>"]
+repository = "https://github.com/Sumitrcs/rzip"
+keywords = ["compression", "lz77", "huffman", "deflate", "cli"]
+categories = ["compression", "command-line-utilities"]
+
+[lib]
+name = "rzip"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rzip"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+codegen-units = 1
