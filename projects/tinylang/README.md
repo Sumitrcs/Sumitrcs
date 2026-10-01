@@ -39,7 +39,7 @@ Errors always point to the source position:
 ```
 >> let total = 10
 >> total + "x" - 1
-Expected a number but got string at 2:13
+Expected a number but got string at 1:13
 ```
 
 ## Try it

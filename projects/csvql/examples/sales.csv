@@ -1,0 +1,13 @@
+id,date,customer_id,product,region,quantity,amount
+1,2026-04-02,C01,Website,North,1,45000
+2,2026-04-05,C02,SEO Package,West,3,36000
+3,2026-04-11,C03,Logo Design,North,2,9000
+4,2026-04-19,C01,Hosting,North,1,4999
+5,2026-05-03,C04,Website,South,1,52000
+6,2026-05-09,C02,Hosting,West,2,9998
+7,2026-05-15,C05,Mobile App,East,1,150000
+8,2026-05-21,C03,SEO Package,North,1,12000
+9,2026-06-01,C06,Website,East,1,48000
+10,2026-06-08,C04,Logo Design,South,1,4500
+11,2026-06-14,C01,SEO Package,North,2,24000
+12,2026-06-30,C07,GST Filing,West,12,30000
