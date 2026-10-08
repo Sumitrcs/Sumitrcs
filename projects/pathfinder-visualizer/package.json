@@ -1,0 +1,14 @@
+{
+  "name": "pathfinder-visualizer",
+  "version": "1.0.0",
+  "description": "Interactive visualiser for A*, Dijkstra, BFS, bidirectional BFS, greedy and DFS on a weighted grid, with animated maze generation.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "npx --yes serve ."
+  },
+  "keywords": ["pathfinding", "a-star", "dijkstra", "algorithms", "visualization", "maze", "canvas"],
+  "author": "Sumit (https://github.com/Sumitrcs)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Sumitrcs/pathfinder-visualizer.git" }
+}

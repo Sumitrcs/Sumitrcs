@@ -1,0 +1,8 @@
+customer_id,name,city,segment
+C01,Acme Traders,Delhi,SME
+C02,Bharat Foods,Mumbai,SME
+C03,Kiran Studio,Noida,Startup
+C04,Southwind Exports,Chennai,Enterprise
+C05,Nimbus Health,Kolkata,Enterprise
+C06,Orbit Labs,Bengaluru,Startup
+C08,Zenith Retail,Pune,SME

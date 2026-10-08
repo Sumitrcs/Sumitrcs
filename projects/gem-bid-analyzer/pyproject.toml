@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gembid"
+version = "1.0.0"
+description = "GeM tender toolkit: eligibility go/no-go with document checklist, L1 ranking with MSE and Make-in-India purchase preference, and price advice from past awards."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sumit", email = "155360729+Sumitrcs@users.noreply.github.com" }]
+keywords = ["gem", "government-e-marketplace", "tender", "procurement", "msme", "make-in-india", "india"]
+
+[project.urls]
+Homepage = "https://github.com/Sumitrcs/gem-bid-analyzer"
+
+[project.scripts]
+gembid = "gembid.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["gembid"]

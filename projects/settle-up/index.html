@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Settle Up — split expenses, pay back in the fewest transfers</title>
+  <meta name="description" content="Split trip and flat expenses equally, by exact amount, percentage or shares, and settle with the minimum number of payments. No sign-up, works offline." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <input id="groupName" class="title" aria-label="Group name" />
+    <div class="actions">
+      <button id="share" title="Copy a link containing this group">Share link</button>
+      <button id="export">Export</button>
+      <label class="button">Import<input id="import" type="file" accept="application/json" hidden /></label>
+      <button id="demo">Load demo</button>
+      <button id="reset" class="danger">Reset</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" id="membersCard">
+      <h2>People</h2>
+      <form id="memberForm" class="row">
+        <input id="memberName" placeholder="Add a name" maxlength="24" required />
+        <button>Add</button>
+      </form>
+      <ul id="members" class="chips"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Add an expense</h2>
+      <form id="expenseForm">
+        <div class="row">
+          <input id="title" placeholder="What was it? e.g. Dinner" required maxlength="60" />
+          <input id="amount" type="number" min="0.01" step="0.01" placeholder="Amount ₹" required />
+        </div>
+        <div class="row">
+          <label>Paid by <select id="paidBy"></select></label>
+          <label>Split
+            <select id="mode">
+              <option value="equal">Equally</option>
+              <option value="exact">Exact amounts</option>
+              <option value="percent">Percentages</option>
+              <option value="shares">Shares</option>
+            </select>
+          </label>
+        </div>
+        <div id="splitInputs" class="split"></div>
+        <p id="formError" class="error" role="alert"></p>
+        <button class="primary">Add expense</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Balances</h2>
+      <div id="balances"></div>
+    </section>
+
+    <section class="card">
+      <h2>Settle up <span id="settleCount" class="muted"></span></h2>
+      <ul id="settlements" class="list"></ul>
+      <p id="settleNote" class="muted small"></p>
+    </section>
+
+    <section class="card wide">
+      <h2>Expenses <span id="total" class="muted"></span></h2>
+      <ul id="expenses" class="list"></ul>
+    </section>
+  </main>
+
+  <div id="toast" role="status"></div>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

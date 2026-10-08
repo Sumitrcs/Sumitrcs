@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pathfinder — A*, Dijkstra & BFS Visualiser</title>
+  <meta name="description" content="Draw walls and mud, generate mazes and watch A*, Dijkstra, BFS, bidirectional BFS, greedy and DFS search in real time." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pathfinder</h1>
+    <div class="controls">
+      <label>Algorithm
+        <select id="algo"></select>
+      </label>
+      <label>Maze
+        <select id="maze">
+          <option value="">— generate —</option>
+        </select>
+      </label>
+      <label>Brush
+        <select id="brush">
+          <option value="wall">Wall</option>
+          <option value="weight">Mud (cost 5)</option>
+          <option value="erase">Erase</option>
+        </select>
+      </label>
+      <label>Speed
+        <input id="speed" type="range" min="1" max="100" value="70" />
+      </label>
+      <button id="run" class="primary">Visualise</button>
+      <button id="compare">Compare all</button>
+      <button id="clearPath">Clear path</button>
+      <button id="clearAll">Clear board</button>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="board" aria-label="Pathfinding grid. Drag to draw walls; drag the green and red cells to move start and end."></canvas>
+    <aside>
+      <section class="stats" id="stats">
+        <h2 id="algoName">A* search</h2>
+        <p id="algoInfo"></p>
+        <dl>
+          <dt>Visited</dt><dd id="visited">–</dd>
+          <dt>Path length</dt><dd id="length">–</dd>
+          <dt>Path cost</dt><dd id="cost">–</dd>
+          <dt>Compute time</dt><dd id="time">–</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>Legend</h2>
+        <ul class="legend">
+          <li><span class="sw start"></span>Start (drag)</li>
+          <li><span class="sw end"></span>End (drag)</li>
+          <li><span class="sw wall"></span>Wall</li>
+          <li><span class="sw weight"></span>Mud — costs 5</li>
+          <li><span class="sw visited"></span>Visited</li>
+          <li><span class="sw path"></span>Path</li>
+        </ul>
+      </section>
+      <section id="compareBox" hidden>
+        <h2>Comparison</h2>
+        <table id="compareTable"></table>
+      </section>
+    </aside>
+  </main>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

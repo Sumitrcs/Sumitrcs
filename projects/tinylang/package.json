@@ -1,0 +1,17 @@
+{
+  "name": "tinylang",
+  "version": "1.0.0",
+  "description": "A small dynamically-typed programming language with closures, string interpolation and a REPL — lexer, Pratt parser and tree-walking interpreter in TypeScript.",
+  "type": "module",
+  "bin": { "tinylang": "src/cli.ts" },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "repl": "node src/cli.ts",
+    "example": "node src/cli.ts examples/showcase.tl"
+  },
+  "engines": { "node": ">=22.18" },
+  "keywords": ["interpreter", "programming-language", "pratt-parser", "compiler", "typescript", "repl"],
+  "author": "Sumit (https://github.com/Sumitrcs)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Sumitrcs/tinylang.git" }
+}

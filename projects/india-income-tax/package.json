@@ -1,0 +1,15 @@
+{
+  "name": "india-income-tax",
+  "version": "1.0.0",
+  "description": "Old vs new regime income tax calculator for FY 2025-26 with 87A marginal relief, surcharge relief, HRA and break-even analysis.",
+  "type": "module",
+  "main": "src/tax.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "npx --yes serve ."
+  },
+  "keywords": ["income-tax", "india", "new-regime", "old-regime", "87a", "hra", "calculator"],
+  "author": "Sumit (https://github.com/Sumitrcs)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Sumitrcs/india-income-tax.git" }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rhttp demo</title>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; max-width: 560px; margin: 40px auto; padding: 0 16px; }
+    input, button { font: inherit; padding: 6px 10px; }
+    li { padding: 4px 0; border-bottom: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <h1>rhttp is running 🦀</h1>
+  <p id="greet">…</p>
+  <form id="f"><input id="note" placeholder="Write a note" required> <button>Add</button></form>
+  <ul id="notes"></ul>
+  <script>
+    fetch("/api/hello/visitor").then(r => r.json()).then(d => greet.textContent = `${d.greeting} (visit #${d.visit})`);
+    const load = () => fetch("/api/notes").then(r => r.json()).then(list => {
+      notes.replaceChildren(...list.map(t => Object.assign(document.createElement("li"), { textContent: t })));
+    });
+    f.onsubmit = async (e) => {
+      e.preventDefault();
+      await fetch("/api/notes", { method: "POST", body: note.value });
+      note.value = "";
+      load();
+    };
+    load();
+  </script>
+</body>
+</html>

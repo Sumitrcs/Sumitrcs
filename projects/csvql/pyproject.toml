@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csvql"
+version = "1.0.0"
+description = "Run SQL (joins, GROUP BY, HAVING, CASE, LIKE …) directly against CSV files — a tiny query engine in pure Python."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sumit", email = "155360729+Sumitrcs@users.noreply.github.com" }]
+keywords = ["sql", "csv", "query-engine", "parser", "data", "cli"]
+
+[project.urls]
+Homepage = "https://github.com/Sumitrcs/csvql"
+
+[project.scripts]
+csvql = "csvql.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["csvql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

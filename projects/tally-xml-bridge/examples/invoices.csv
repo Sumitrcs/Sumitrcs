@@ -1,0 +1,4 @@
+date,invoice_no,party,taxable_value,gst_rate,place_of_supply
+01-05-2026,RCS/26-27/0101,Acme Traders,45000,18,Delhi
+03-05-2026,RCS/26-27/0102,Bharat Foods Pvt Ltd,12345.67,18,Maharashtra
+07-05-2026,RCS/26-27/0103,Kiran Studio & Co.,8999,12,Delhi

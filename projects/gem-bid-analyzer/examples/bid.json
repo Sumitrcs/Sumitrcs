@@ -1,0 +1,15 @@
+{
+  "bid_number": "GEM/2026/B/1234567",
+  "item": "Desktop Computer i5 16GB",
+  "quantity": 120,
+  "estimated_value": 7200000,
+  "min_avg_turnover": 3000000,
+  "turnover_years": 3,
+  "min_experience_years": 3,
+  "past_performance_pct": 30,
+  "oem_authorization_required": true,
+  "required_certifications": ["ISO 9001", "BIS"],
+  "emd_amount": 144000,
+  "mse_exemption": true,
+  "startup_exemption": true
+}

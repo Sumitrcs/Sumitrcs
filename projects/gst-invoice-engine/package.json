@@ -1,0 +1,17 @@
+{
+  "name": "gst-invoice-engine",
+  "version": "1.0.0",
+  "description": "Exact, paise-accurate GST invoice computation for India: CGST/SGST/UTGST/IGST, place of supply, SEZ & exports, cess, HSN summary, round-off and amount in words.",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": "./src/index.ts",
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "example": "node examples/print-invoice.ts"
+  },
+  "engines": { "node": ">=22.18" },
+  "keywords": ["gst", "invoice", "india", "igst", "cgst", "sgst", "hsn", "tax", "billing", "typescript"],
+  "author": "Sumit (https://github.com/Sumitrcs)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Sumitrcs/gst-invoice-engine.git" }
+}

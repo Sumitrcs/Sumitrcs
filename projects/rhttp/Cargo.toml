@@ -1,0 +1,12 @@
+[package]
+name = "rhttp"
+version = "1.0.0"
+edition = "2024"
+description = "A dependency-free HTTP/1.1 server written from scratch: thread pool, keep-alive, router with path params, static files."
+license = "MIT"
+authors = ["Sumit <155360729+Sumitrcs@users.noreply.github.com>"]
+repository = "https://github.com/Sumitrcs/rhttp"
+keywords = ["http", "server", "web", "networking", "from-scratch"]
+categories = ["web-programming::http-server", "network-programming"]
+
+[dependencies]
