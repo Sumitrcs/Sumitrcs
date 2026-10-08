@@ -1,0 +1,47 @@
+name: Publish projects and portfolio
+
+# Every folder in projects/ is mirrored to its own repository, and the
+# portfolio files are deployed to <user>.github.io.
+# Needs a repository secret PUBLISH_TOKEN (see README "Automatic publishing").
+on:
+  push:
+    branches: [main]
+    paths:
+      - "projects/**"
+      - "index.html"
+      - "styles.css"
+      - "script.js"
+      - "sitemap.xml"
+      - "robots.txt"
+      - "scripts/publish.sh"
+  workflow_dispatch:
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+    steps:
+      - name: Check token
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::PUBLISH_TOKEN secret is not set — skipping publishing."
+            echo "SKIP=1" >> "$GITHUB_ENV"
+          fi
+      - uses: actions/checkout@v4
+        if: env.SKIP != '1'
+      - name: Configure git
+        if: env.SKIP != '1'
+        run: |
+          git config --global user.name "Sumitrcs"
+          git config --global user.email "155360729+Sumitrcs@users.noreply.github.com"
+          gh auth setup-git
+      - name: Publish
+        if: env.SKIP != '1'
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: bash scripts/publish.sh
