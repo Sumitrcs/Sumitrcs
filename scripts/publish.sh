@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Publishes every folder in projects/ as its own public GitHub repository,
-# adds topics, enables GitHub Pages for the web apps, and deploys the
+# Publishes every folder in projects/ as its own public GitHub repository
+# (creating it, or syncing changes into it if it already exists), adds topics, enables GitHub Pages for the web apps, and deploys the
 # portfolio to https://<user>.github.io.
 #
 # Requirements: git and the GitHub CLI (https://cli.github.com), logged in:
@@ -20,12 +20,27 @@ publish_dir() { # <name> <source-dir> <description> <topics-csv> <pages?>
   local homepage=""
   [[ -n "$pages" ]] && homepage="https://${OWNER,,}.github.io/$name/"
 
+  local dir="$WORK/$name"
   if gh repo view "$OWNER/$name" >/dev/null 2>&1; then
-    echo "• $name: repository exists — updating description/topics only"
+    # Existing repository: mirror the current files into it and push only if something changed.
+    rm -rf "$dir"
+    git clone -q --depth 1 "https://github.com/$OWNER/$name.git" "$dir" 2>/dev/null || { mkdir -p "$dir"; git -C "$dir" init -q -b main; git -C "$dir" remote add origin "https://github.com/$OWNER/$name.git"; }
+    find "$dir" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+    cp -R "$src"/. "$dir"/
+    (
+      cd "$dir"
+      git add -A
+      if git diff --cached --quiet; then
+        echo "• $name: up to date"
+      else
+        git commit -q -m "$(printf '%s\n' "${COMMIT_MESSAGE:-Update $name}" | head -n 1)"
+        git push -q origin HEAD:main
+        echo "• $name: updated"
+      fi
+    )
   else
     echo "• $name: creating repository"
     gh repo create "$OWNER/$name" --public --description "$desc" ${homepage:+--homepage "$homepage"} >/dev/null
-    local dir="$WORK/$name"
     mkdir -p "$dir"
     cp -R "$src"/. "$dir"/
     (
