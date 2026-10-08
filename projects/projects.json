@@ -1,22 +1,445 @@
 [
- {"repo":"gst-invoice-engine","cat":"fintech","lang":"TypeScript","emoji":"🧾","title":"GST Invoice Engine","desc":"Paise-exact GST invoices: CGST/SGST/UTGST/IGST by place of supply, SEZ & exports, cess, HSN summary, round-off and amount in words.","tags":["TypeScript","GST","Billing"],"topics":["gst","invoice","india","billing","typescript","tax"]},
- {"repo":"india-kyc-validators","cat":"fintech","lang":"TypeScript","emoji":"🪪","title":"India KYC Validators","desc":"Zero-dependency validators for GSTIN (mod-36 checksum), PAN, TAN, IFSC, Aadhaar (Verhoeff), UPI, PIN code and vehicle numbers.","tags":["TypeScript","Validation","KYC"],"topics":["gstin","pan","aadhaar","ifsc","upi","validation","india","typescript"]},
- {"repo":"india-income-tax","cat":"fintech","lang":"JavaScript","emoji":"💰","title":"Income Tax Calculator","desc":"Old vs new regime for FY 2025-26 with 87A marginal relief, surcharge relief, HRA and break-even deductions. Live web app.","tags":["JavaScript","Tax","Web app"],"topics":["income-tax","india","calculator","new-regime","javascript"],"pages":true},
- {"repo":"bank-recon","cat":"fintech","lang":"Python","emoji":"🏦","title":"Bank Reconciliation","desc":"Five-pass matching (UTR/cheque, date window, fuzzy narration, split deposits) that produces a ready Bank Reconciliation Statement.","tags":["Python","Accounting","Matching"],"topics":["accounting","bank-reconciliation","brs","finance","python","india"]},
- {"repo":"tally-xml-bridge","cat":"fintech","lang":"Python","emoji":"🔁","title":"Tally XML Bridge","desc":"Spreadsheets to Tally Prime import XML (vouchers, GST sales, ledger masters) and Tally exports back to CSV, with validation.","tags":["Python","Tally Prime","XML"],"topics":["tally","tally-prime","accounting","gst","xml","python"]},
- {"repo":"gem-bid-analyzer","cat":"fintech","lang":"Python","emoji":"🏛️","title":"GeM Bid Analyzer","desc":"Eligibility go/no-go with document checklist, L1 ranking with MSE & Make-in-India preference, and price advice from past awards.","tags":["Python","GeM","Procurement"],"topics":["gem","government-e-marketplace","tender","procurement","msme","python"]},
- {"repo":"ledger-cli","cat":"fintech","lang":"Go","emoji":"📒","title":"ledger-cli","desc":"Plain-text double-entry accounting: balance assertions, trial balance, P&L and balance sheet with Indian number formatting.","tags":["Go","Accounting","CLI"],"topics":["accounting","double-entry","plain-text-accounting","cli","golang"]},
- {"repo":"lsm-kv","cat":"systems","lang":"Go","emoji":"🗄️","title":"LSM-tree Key-Value Store","desc":"Crash-safe storage engine: write-ahead log, skip-list memtable, SSTables with sparse index and Bloom filters, compaction, manifest.","tags":["Go","Database","Storage"],"topics":["database","lsm-tree","key-value-store","storage-engine","bloom-filter","golang"]},
- {"repo":"rhttp","cat":"systems","lang":"Rust","emoji":"🦀","title":"rhttp — HTTP/1.1 Server","desc":"HTTP server from scratch with std only: thread pool, keep-alive and pipelining, router with params, static files with ETags.","tags":["Rust","Networking","HTTP"],"topics":["http","server","rust","networking","from-scratch","web-server"]},
- {"repo":"rzip","cat":"systems","lang":"Rust","emoji":"🗜️","title":"rzip Compressor","desc":"LZ77 with hash chains + canonical length-limited Huffman coding and CRC-32. Matches gzip's compression ratio.","tags":["Rust","Compression","Algorithms"],"topics":["compression","lz77","huffman","deflate","rust","cli"]},
- {"repo":"dlx-solver","cat":"systems","lang":"C","emoji":"🧩","title":"Dancing Links Solver","desc":"Knuth's Algorithm X with Dancing Links in C11: generic exact cover, Sudoku up to 25×25 and N-Queens. Sanitizer-clean.","tags":["C","Algorithms","Backtracking"],"topics":["dancing-links","algorithm-x","exact-cover","sudoku","n-queens","c"]},
- {"repo":"tinylang","cat":"systems","lang":"TypeScript","emoji":"🔤","title":"tinylang Interpreter","desc":"A small programming language: hand-written lexer, Pratt parser, closures, maps, ranges, string interpolation and a REPL.","tags":["TypeScript","Compiler","Interpreter"],"topics":["interpreter","programming-language","pratt-parser","compiler","typescript","repl"]},
- {"repo":"csvql","cat":"systems","lang":"Python","emoji":"🔎","title":"csvql — SQL on CSV","desc":"A query engine for CSV files: joins (hash + nested loop), GROUP BY, HAVING, CASE, LIKE and three-valued NULL logic.","tags":["Python","SQL","Query engine"],"topics":["sql","csv","query-engine","parser","database","python"]},
- {"repo":"ratelimit-go","cat":"tools","lang":"Go","emoji":"🚦","title":"ratelimit-go","desc":"Token bucket, fixed & sliding window and GCRA behind one API, with 64-shard locking and net/http middleware.","tags":["Go","Backend","Middleware"],"topics":["rate-limiting","gcra","token-bucket","middleware","golang","api"]},
- {"repo":"taskq","cat":"tools","lang":"Python","emoji":"⚙️","title":"taskq Job Queue","desc":"Durable background jobs on SQLite: atomic claims, leases with heartbeats, backoff with jitter, dead-letter queue, asyncio workers.","tags":["Python","asyncio","SQLite"],"topics":["job-queue","background-jobs","asyncio","sqlite","worker","python"]},
- {"repo":"cronkit","cat":"tools","lang":"TypeScript","emoji":"⏰","title":"cronkit","desc":"Cron parser and scheduler with seconds, L, nth weekday, IANA time zones and correct DST handling, plus plain-English descriptions.","tags":["TypeScript","Scheduling","Time zones"],"topics":["cron","scheduler","timezone","dst","typescript","crontab"]},
- {"repo":"textdiff","cat":"tools","lang":"TypeScript","emoji":"📝","title":"textdiff","desc":"Myers O(ND) diff, git-compatible unified diffs, offset-tolerant patching, diff3 three-way merge and word-level diffs.","tags":["TypeScript","Algorithms","Git"],"topics":["diff","myers","patch","merge","diff3","typescript"]},
- {"repo":"sitecrawler","cat":"tools","lang":"Go","emoji":"🕷️","title":"sitecrawler","desc":"Polite concurrent crawler: robots.txt (RFC 9309), per-host rate limits, broken-link report and sitemap.xml generation.","tags":["Go","SEO","Concurrency"],"topics":["crawler","seo","sitemap","robots-txt","broken-links","golang"]},
- {"repo":"pathfinder-visualizer","cat":"web","lang":"JavaScript","emoji":"🧭","title":"Pathfinding Visualiser","desc":"Watch A*, Dijkstra, BFS, bidirectional BFS, greedy and DFS search a weighted grid; animated maze generation. Live demo.","tags":["JavaScript","Canvas","Algorithms"],"topics":["pathfinding","a-star","dijkstra","visualization","maze","javascript"],"pages":true},
- {"repo":"settle-up","cat":"web","lang":"JavaScript","emoji":"🤝","title":"Settle Up","desc":"Split group expenses four ways and settle with the provably minimum number of payments (bitmask DP). Offline, shareable by link.","tags":["JavaScript","Web app","Algorithms"],"topics":["expense-splitter","splitwise","algorithms","javascript","web-app"],"pages":true}
+ {
+  "repo": "gst-invoice-engine",
+  "cat": "fintech",
+  "lang": "TypeScript",
+  "emoji": "🧾",
+  "title": "GST Invoice Engine",
+  "desc": "Paise-exact GST invoices: CGST/SGST/UTGST/IGST by place of supply, SEZ & exports, cess, HSN summary, round-off and amount in words.",
+  "tags": [
+   "TypeScript",
+   "GST",
+   "Billing"
+  ],
+  "topics": [
+   "gst",
+   "invoice",
+   "india",
+   "billing",
+   "typescript",
+   "tax"
+  ]
+ },
+ {
+  "repo": "india-kyc-validators",
+  "cat": "fintech",
+  "lang": "TypeScript",
+  "emoji": "🪪",
+  "title": "India KYC Validators",
+  "desc": "Zero-dependency validators for GSTIN (mod-36 checksum), PAN, TAN, IFSC, Aadhaar (Verhoeff), UPI, PIN code and vehicle numbers.",
+  "tags": [
+   "TypeScript",
+   "Validation",
+   "KYC"
+  ],
+  "topics": [
+   "gstin",
+   "pan",
+   "aadhaar",
+   "ifsc",
+   "upi",
+   "validation",
+   "india",
+   "typescript"
+  ]
+ },
+ {
+  "repo": "india-income-tax",
+  "cat": "fintech",
+  "lang": "JavaScript",
+  "emoji": "💰",
+  "title": "Income Tax Calculator",
+  "desc": "Old vs new regime for FY 2025-26 with 87A marginal relief, surcharge relief, HRA and break-even deductions. Live web app.",
+  "tags": [
+   "JavaScript",
+   "Tax",
+   "Web app"
+  ],
+  "topics": [
+   "income-tax",
+   "india",
+   "calculator",
+   "new-regime",
+   "javascript"
+  ],
+  "pages": true
+ },
+ {
+  "repo": "bank-recon",
+  "cat": "fintech",
+  "lang": "Python",
+  "emoji": "🏦",
+  "title": "Bank Reconciliation",
+  "desc": "Five-pass matching (UTR/cheque, date window, fuzzy narration, split deposits) that produces a ready Bank Reconciliation Statement.",
+  "tags": [
+   "Python",
+   "Accounting",
+   "Matching"
+  ],
+  "topics": [
+   "accounting",
+   "bank-reconciliation",
+   "brs",
+   "finance",
+   "python",
+   "india"
+  ]
+ },
+ {
+  "repo": "tally-xml-bridge",
+  "cat": "fintech",
+  "lang": "Python",
+  "emoji": "🔁",
+  "title": "Tally XML Bridge",
+  "desc": "Spreadsheets to Tally Prime import XML (vouchers, GST sales, ledger masters) and Tally exports back to CSV, with validation.",
+  "tags": [
+   "Python",
+   "Tally Prime",
+   "XML"
+  ],
+  "topics": [
+   "tally",
+   "tally-prime",
+   "accounting",
+   "gst",
+   "xml",
+   "python"
+  ]
+ },
+ {
+  "repo": "gem-bid-analyzer",
+  "cat": "fintech",
+  "lang": "Python",
+  "emoji": "🏛️",
+  "title": "GeM Bid Analyzer",
+  "desc": "Eligibility go/no-go with document checklist, L1 ranking with MSE & Make-in-India preference, and price advice from past awards.",
+  "tags": [
+   "Python",
+   "GeM",
+   "Procurement"
+  ],
+  "topics": [
+   "gem",
+   "government-e-marketplace",
+   "tender",
+   "procurement",
+   "msme",
+   "python"
+  ]
+ },
+ {
+  "repo": "ledger-cli",
+  "cat": "fintech",
+  "lang": "Go",
+  "emoji": "📒",
+  "title": "ledger-cli",
+  "desc": "Plain-text double-entry accounting: balance assertions, trial balance, P&L and balance sheet with Indian number formatting.",
+  "tags": [
+   "Go",
+   "Accounting",
+   "CLI"
+  ],
+  "topics": [
+   "accounting",
+   "double-entry",
+   "plain-text-accounting",
+   "cli",
+   "golang"
+  ]
+ },
+ {
+  "repo": "lsm-kv",
+  "cat": "systems",
+  "lang": "Go",
+  "emoji": "🗄️",
+  "title": "LSM-tree Key-Value Store",
+  "desc": "Crash-safe storage engine: write-ahead log, skip-list memtable, SSTables with sparse index and Bloom filters, compaction, manifest.",
+  "tags": [
+   "Go",
+   "Database",
+   "Storage"
+  ],
+  "topics": [
+   "database",
+   "lsm-tree",
+   "key-value-store",
+   "storage-engine",
+   "bloom-filter",
+   "golang"
+  ]
+ },
+ {
+  "repo": "rhttp",
+  "cat": "systems",
+  "lang": "Rust",
+  "emoji": "🦀",
+  "title": "rhttp — HTTP/1.1 Server",
+  "desc": "HTTP server from scratch with std only: thread pool, keep-alive and pipelining, router with params, static files with ETags.",
+  "tags": [
+   "Rust",
+   "Networking",
+   "HTTP"
+  ],
+  "topics": [
+   "http",
+   "server",
+   "rust",
+   "networking",
+   "from-scratch",
+   "web-server"
+  ]
+ },
+ {
+  "repo": "rzip",
+  "cat": "systems",
+  "lang": "Rust",
+  "emoji": "🗜️",
+  "title": "rzip Compressor",
+  "desc": "LZ77 with hash chains + canonical length-limited Huffman coding and CRC-32. Matches gzip's compression ratio.",
+  "tags": [
+   "Rust",
+   "Compression",
+   "Algorithms"
+  ],
+  "topics": [
+   "compression",
+   "lz77",
+   "huffman",
+   "deflate",
+   "rust",
+   "cli"
+  ]
+ },
+ {
+  "repo": "dlx-solver",
+  "cat": "systems",
+  "lang": "C",
+  "emoji": "🧩",
+  "title": "Dancing Links Solver",
+  "desc": "Knuth's Algorithm X with Dancing Links in C11: generic exact cover, Sudoku up to 25×25 and N-Queens. Sanitizer-clean.",
+  "tags": [
+   "C",
+   "Algorithms",
+   "Backtracking"
+  ],
+  "topics": [
+   "dancing-links",
+   "algorithm-x",
+   "exact-cover",
+   "sudoku",
+   "n-queens",
+   "c"
+  ]
+ },
+ {
+  "repo": "tinylang",
+  "cat": "systems",
+  "lang": "TypeScript",
+  "emoji": "🔤",
+  "title": "tinylang Interpreter",
+  "desc": "A small programming language: hand-written lexer, Pratt parser, closures, maps, ranges, string interpolation and a REPL.",
+  "tags": [
+   "TypeScript",
+   "Compiler",
+   "Interpreter"
+  ],
+  "topics": [
+   "interpreter",
+   "programming-language",
+   "pratt-parser",
+   "compiler",
+   "typescript",
+   "repl"
+  ]
+ },
+ {
+  "repo": "csvql",
+  "cat": "systems",
+  "lang": "Python",
+  "emoji": "🔎",
+  "title": "csvql — SQL on CSV",
+  "desc": "A query engine for CSV files: joins (hash + nested loop), GROUP BY, HAVING, CASE, LIKE and three-valued NULL logic.",
+  "tags": [
+   "Python",
+   "SQL",
+   "Query engine"
+  ],
+  "topics": [
+   "sql",
+   "csv",
+   "query-engine",
+   "parser",
+   "database",
+   "python"
+  ]
+ },
+ {
+  "repo": "ratelimit-go",
+  "cat": "tools",
+  "lang": "Go",
+  "emoji": "🚦",
+  "title": "ratelimit-go",
+  "desc": "Token bucket, fixed & sliding window and GCRA behind one API, with 64-shard locking and net/http middleware.",
+  "tags": [
+   "Go",
+   "Backend",
+   "Middleware"
+  ],
+  "topics": [
+   "rate-limiting",
+   "gcra",
+   "token-bucket",
+   "middleware",
+   "golang",
+   "api"
+  ]
+ },
+ {
+  "repo": "taskq",
+  "cat": "tools",
+  "lang": "Python",
+  "emoji": "⚙️",
+  "title": "taskq Job Queue",
+  "desc": "Durable background jobs on SQLite: atomic claims, leases with heartbeats, backoff with jitter, dead-letter queue, asyncio workers.",
+  "tags": [
+   "Python",
+   "asyncio",
+   "SQLite"
+  ],
+  "topics": [
+   "job-queue",
+   "background-jobs",
+   "asyncio",
+   "sqlite",
+   "worker",
+   "python"
+  ]
+ },
+ {
+  "repo": "cronkit",
+  "cat": "tools",
+  "lang": "TypeScript",
+  "emoji": "⏰",
+  "title": "cronkit",
+  "desc": "Cron parser and scheduler with seconds, L, nth weekday, IANA time zones and correct DST handling, plus plain-English descriptions.",
+  "tags": [
+   "TypeScript",
+   "Scheduling",
+   "Time zones"
+  ],
+  "topics": [
+   "cron",
+   "scheduler",
+   "timezone",
+   "dst",
+   "typescript",
+   "crontab"
+  ]
+ },
+ {
+  "repo": "textdiff",
+  "cat": "tools",
+  "lang": "TypeScript",
+  "emoji": "📝",
+  "title": "textdiff",
+  "desc": "Myers O(ND) diff, git-compatible unified diffs, offset-tolerant patching, diff3 three-way merge and word-level diffs.",
+  "tags": [
+   "TypeScript",
+   "Algorithms",
+   "Git"
+  ],
+  "topics": [
+   "diff",
+   "myers",
+   "patch",
+   "merge",
+   "diff3",
+   "typescript"
+  ]
+ },
+ {
+  "repo": "sitecrawler",
+  "cat": "tools",
+  "lang": "Go",
+  "emoji": "🕷️",
+  "title": "sitecrawler",
+  "desc": "Polite concurrent crawler: robots.txt (RFC 9309), per-host rate limits, broken-link report and sitemap.xml generation.",
+  "tags": [
+   "Go",
+   "SEO",
+   "Concurrency"
+  ],
+  "topics": [
+   "crawler",
+   "seo",
+   "sitemap",
+   "robots-txt",
+   "broken-links",
+   "golang"
+  ]
+ },
+ {
+  "repo": "pathfinder-visualizer",
+  "cat": "web",
+  "lang": "JavaScript",
+  "emoji": "🧭",
+  "title": "Pathfinding Visualiser",
+  "desc": "Watch A*, Dijkstra, BFS, bidirectional BFS, greedy and DFS search a weighted grid; animated maze generation. Live demo.",
+  "tags": [
+   "JavaScript",
+   "Canvas",
+   "Algorithms"
+  ],
+  "topics": [
+   "pathfinding",
+   "a-star",
+   "dijkstra",
+   "visualization",
+   "maze",
+   "javascript"
+  ],
+  "pages": true
+ },
+ {
+  "repo": "settle-up",
+  "cat": "web",
+  "lang": "JavaScript",
+  "emoji": "🤝",
+  "title": "Settle Up",
+  "desc": "Split group expenses four ways and settle with the provably minimum number of payments (bitmask DP). Offline, shareable by link.",
+  "tags": [
+   "JavaScript",
+   "Web app",
+   "Algorithms"
+  ],
+  "topics": [
+   "expense-splitter",
+   "splitwise",
+   "algorithms",
+   "javascript",
+   "web-app"
+  ],
+  "pages": true
+ },
+ {
+  "repo": "minigit",
+  "cat": "systems",
+  "lang": "Python",
+  "emoji": "🌱",
+  "title": "minigit — Git from scratch",
+  "desc": "A small, readable Git in Python that writes Git's real object, tree, commit and index formats — the real git opens its repositories.",
+  "tags": [
+   "Python",
+   "Git internals",
+   "Learning"
+  ],
+  "topics": [
+   "git",
+   "version-control",
+   "git-internals",
+   "learning",
+   "education",
+   "python"
+  ]
+ }
 ]

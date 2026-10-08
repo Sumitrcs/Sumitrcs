@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-20%20projects-0f9d76?style=for-the-badge&logo=github" alt="20 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-21%20projects-0f9d76?style=for-the-badge&logo=github" alt="21 projects"/></a>
 </p>
 
 ---
@@ -40,6 +40,7 @@
 
 ## 🚀 Projects
 
+<!-- projects:start -->
 ### 🧾 FinTech, GST & accounting (India)
 
 | Project | What it does | Stack |
@@ -62,6 +63,7 @@
 | 🧩 [**dlx-solver**](https://github.com/Sumitrcs/dlx-solver) | Knuth's Algorithm X with Dancing Links in C11: generic exact cover, Sudoku up to 25×25 and N-Queens. Sanitizer-clean. | `C` |
 | 🔤 [**tinylang**](https://github.com/Sumitrcs/tinylang) | A small programming language: hand-written lexer, Pratt parser, closures, maps, ranges, string interpolation and a REPL. | `TypeScript` |
 | 🔎 [**csvql**](https://github.com/Sumitrcs/csvql) | A query engine for CSV files: joins (hash + nested loop), GROUP BY, HAVING, CASE, LIKE and three-valued NULL logic. | `Python` |
+| 🌱 [**minigit**](https://github.com/Sumitrcs/minigit) | A small, readable Git in Python that writes Git's real object, tree, commit and index formats — the real git opens its repositories. | `Python` |
 
 ### 🛠️ Developer tools & backend
 
@@ -79,6 +81,7 @@
 |---|---|---|
 | 🧭 [**pathfinder-visualizer**](https://github.com/Sumitrcs/pathfinder-visualizer) · [**live demo**](https://sumitrcs.github.io/pathfinder-visualizer/) | Watch A*, Dijkstra, BFS, bidirectional BFS, greedy and DFS search a weighted grid; animated maze generation. Live demo. | `JavaScript` |
 | 🤝 [**settle-up**](https://github.com/Sumitrcs/settle-up) · [**live demo**](https://sumitrcs.github.io/settle-up/) | Split group expenses four ways and settle with the provably minimum number of payments (bitmask DP). Offline, shareable by link. | `JavaScript` |
+<!-- projects:end -->
 
 ## 📊 GitHub stats
 
