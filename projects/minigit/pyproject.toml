@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minigit"
+version = "1.0.0"
+description = "A small, readable Git in pure Python that writes Git's real object, tree, commit and index formats — real git can read its repositories."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sumit", email = "155360729+Sumitrcs@users.noreply.github.com" }]
+keywords = ["git", "version-control", "learning", "education", "internals", "python"]
+
+[project.urls]
+Homepage = "https://github.com/Sumitrcs/minigit"
+
+[project.scripts]
+minigit = "minigit.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["minigit"]

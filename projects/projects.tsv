@@ -18,3 +18,4 @@ textdiff	Myers O(ND) diff, git-compatible unified diffs, offset-tolerant patchin
 sitecrawler	Polite concurrent crawler: robots.txt (RFC 9309), per-host rate limits, broken-link report and sitemap.xml generation.	crawler,seo,sitemap,robots-txt,broken-links,golang	
 pathfinder-visualizer	Watch A*, Dijkstra, BFS, bidirectional BFS, greedy and DFS search a weighted grid; animated maze generation. Live demo.	pathfinding,a-star,dijkstra,visualization,maze,javascript	pages
 settle-up	Split group expenses four ways and settle with the provably minimum number of payments (bitmask DP). Offline, shareable by link.	expense-splitter,splitwise,algorithms,javascript,web-app	pages
+minigit	A small, readable Git in Python that writes Git's real object, tree, commit and index formats — the real git opens its repositories.	git,version-control,git-internals,learning,education,python	
