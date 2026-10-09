@@ -441,5 +441,27 @@
    "education",
    "python"
   ]
+ },
+ {
+  "repo": "tinyredis",
+  "cat": "systems",
+  "lang": "Go",
+  "emoji": "🧠",
+  "title": "tinyredis — Redis in Go",
+  "desc": "A small Redis server that real redis-cli talks to: RESP protocol, strings, lists, hashes, TTL expiry, pipelining and AOF persistence.",
+  "tags": [
+   "Go",
+   "Networking",
+   "Database"
+  ],
+  "topics": [
+   "redis",
+   "resp",
+   "key-value-store",
+   "tcp-server",
+   "database",
+   "golang",
+   "learning"
+  ]
  }
 ]
