@@ -20,3 +20,4 @@ pathfinder-visualizer	Watch A*, Dijkstra, BFS, bidirectional BFS, greedy and DFS
 settle-up	Split group expenses four ways and settle with the provably minimum number of payments (bitmask DP). Offline, shareable by link.	expense-splitter,splitwise,algorithms,javascript,web-app	pages
 minigit	A small, readable Git in Python that writes Git's real object, tree, commit and index formats — the real git opens its repositories.	git,version-control,git-internals,learning,education,python	
 tinyredis	A small Redis server that real redis-cli talks to: RESP protocol, strings, lists, hashes, TTL expiry, pipelining and AOF persistence.	redis,resp,key-value-store,tcp-server,database,golang,learning	
+apicheck	API tests as plain JSON files: chained requests with saved variables, JSON-path matchers, timing limits and JUnit reports for CI. Zero dependencies.	api-testing,rest-api,testing,qa,junit,ci,http,python	
