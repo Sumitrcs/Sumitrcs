@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-21%20projects-0f9d76?style=for-the-badge&logo=github" alt="21 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-22%20projects-0f9d76?style=for-the-badge&logo=github" alt="22 projects"/></a>
 </p>
 
 ---
@@ -64,6 +64,7 @@
 | 🔤 [**tinylang**](https://github.com/Sumitrcs/tinylang) | A small programming language: hand-written lexer, Pratt parser, closures, maps, ranges, string interpolation and a REPL. | `TypeScript` |
 | 🔎 [**csvql**](https://github.com/Sumitrcs/csvql) | A query engine for CSV files: joins (hash + nested loop), GROUP BY, HAVING, CASE, LIKE and three-valued NULL logic. | `Python` |
 | 🌱 [**minigit**](https://github.com/Sumitrcs/minigit) | A small, readable Git in Python that writes Git's real object, tree, commit and index formats — the real git opens its repositories. | `Python` |
+| 🧠 [**tinyredis**](https://github.com/Sumitrcs/tinyredis) | A small Redis server that real redis-cli talks to: RESP protocol, strings, lists, hashes, TTL expiry, pipelining and AOF persistence. | `Go` |
 
 ### 🛠️ Developer tools & backend
 
