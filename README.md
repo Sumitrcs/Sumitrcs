@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-22%20projects-0f9d76?style=for-the-badge&logo=github" alt="22 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-23%20projects-0f9d76?style=for-the-badge&logo=github" alt="23 projects"/></a>
 </p>
 
 ---
@@ -75,6 +75,7 @@
 | ⏰ [**cronkit**](https://github.com/Sumitrcs/cronkit) | Cron parser and scheduler with seconds, L, nth weekday, IANA time zones and correct DST handling, plus plain-English descriptions. | `TypeScript` |
 | 📝 [**textdiff**](https://github.com/Sumitrcs/textdiff) | Myers O(ND) diff, git-compatible unified diffs, offset-tolerant patching, diff3 three-way merge and word-level diffs. | `TypeScript` |
 | 🕷️ [**sitecrawler**](https://github.com/Sumitrcs/sitecrawler) | Polite concurrent crawler: robots.txt (RFC 9309), per-host rate limits, broken-link report and sitemap.xml generation. | `Go` |
+| ✅ [**apicheck**](https://github.com/Sumitrcs/apicheck) | API tests as plain JSON files: chained requests with saved variables, JSON-path matchers, timing limits and JUnit reports for CI. Zero dependencies. | `Python` |
 
 ### 🌐 Web apps
 

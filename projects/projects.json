@@ -463,5 +463,28 @@
    "golang",
    "learning"
   ]
+ },
+ {
+  "repo": "apicheck",
+  "cat": "tools",
+  "lang": "Python",
+  "emoji": "✅",
+  "title": "apicheck",
+  "desc": "API tests as plain JSON files: chained requests with saved variables, JSON-path matchers, timing limits and JUnit reports for CI. Zero dependencies.",
+  "tags": [
+   "Python",
+   "Testing",
+   "CI"
+  ],
+  "topics": [
+   "api-testing",
+   "rest-api",
+   "testing",
+   "qa",
+   "junit",
+   "ci",
+   "http",
+   "python"
+  ]
  }
 ]

@@ -1,0 +1,35 @@
+{
+  "base_url": "https://jsonplaceholder.typicode.com",
+  "headers": { "Accept": "application/json" },
+  "tests": [
+    {
+      "name": "list posts",
+      "path": "/posts",
+      "query": { "userId": 1 },
+      "expect": {
+        "status": 200,
+        "headers": { "content-type": { "contains": "application/json" } },
+        "json": { "$": { "len": 10 }, "0.userId": 1, "0.title": { "type": "string" } },
+        "max_ms": 3000
+      },
+      "save": { "post_id": "json:0.id" }
+    },
+    {
+      "name": "fetch the first post",
+      "path": "/posts/${post_id}",
+      "expect": { "status": 200, "json": { "id": "${post_id}", "body": { "type": "string" } } }
+    },
+    {
+      "name": "create a post",
+      "method": "POST",
+      "path": "/posts",
+      "json": { "title": "hello", "body": "from apicheck", "userId": 1 },
+      "expect": { "status": 201, "json": { "id": { "type": "integer" }, "title": "hello" } }
+    },
+    {
+      "name": "unknown post is 404",
+      "path": "/posts/999999",
+      "expect": { "status": 404 }
+    }
+  ]
+}

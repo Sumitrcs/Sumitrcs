@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apicheck"
+version = "0.1.0"
+description = "Write API tests as plain JSON, run them from the terminal or CI, get a JUnit report. Zero dependencies."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sumit", email = "155360729+Sumitrcs@users.noreply.github.com" }]
+keywords = ["api-testing", "http", "rest", "testing", "junit", "ci", "qa"]
+
+[project.urls]
+Homepage = "https://github.com/Sumitrcs/apicheck"
+
+[project.scripts]
+apicheck = "apicheck.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["apicheck"]
