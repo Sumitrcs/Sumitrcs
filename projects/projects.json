@@ -463,5 +463,29 @@
    "golang",
    "learning"
   ]
+ },
+ {
+  "repo": "gst-invoice-maker",
+  "cat": "fintech",
+  "lang": "JavaScript",
+  "emoji": "🧾",
+  "title": "GST Invoice Maker",
+  "desc": "Browser-only GST tax invoice generator: GSTIN check-digit validation, auto CGST/SGST or IGST, HSN summary, amount in words, A4 PDF.",
+  "tags": [
+   "JavaScript",
+   "GST",
+   "Web app"
+  ],
+  "topics": [
+   "gst",
+   "gst-invoice",
+   "invoice-generator",
+   "gstin",
+   "india",
+   "javascript",
+   "web-app",
+   "learning"
+  ],
+  "pages": true
  }
 ]
