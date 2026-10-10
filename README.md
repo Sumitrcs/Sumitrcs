@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-22%20projects-0f9d76?style=for-the-badge&logo=github" alt="22 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-23%20projects-0f9d76?style=for-the-badge&logo=github" alt="23 projects"/></a>
 </p>
 
 ---
@@ -52,6 +52,7 @@
 | 🔁 [**tally-xml-bridge**](https://github.com/Sumitrcs/tally-xml-bridge) | Spreadsheets to Tally Prime import XML (vouchers, GST sales, ledger masters) and Tally exports back to CSV, with validation. | `Python` |
 | 🏛️ [**gem-bid-analyzer**](https://github.com/Sumitrcs/gem-bid-analyzer) | Eligibility go/no-go with document checklist, L1 ranking with MSE & Make-in-India preference, and price advice from past awards. | `Python` |
 | 📒 [**ledger-cli**](https://github.com/Sumitrcs/ledger-cli) | Plain-text double-entry accounting: balance assertions, trial balance, P&L and balance sheet with Indian number formatting. | `Go` |
+| 🧾 [**gst-invoice-maker**](https://github.com/Sumitrcs/gst-invoice-maker) · [**live demo**](https://sumitrcs.github.io/gst-invoice-maker/) | Browser-only GST tax invoice generator: GSTIN check-digit validation, auto CGST/SGST or IGST, HSN summary, amount in words, A4 PDF. | `JavaScript` |
 
 ### ⚙️ Systems & computer science from scratch
 

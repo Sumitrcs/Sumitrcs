@@ -17,4 +17,8 @@
     <loc>https://sumitrcs.github.io/settle-up/</loc>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://sumitrcs.github.io/gst-invoice-maker/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>

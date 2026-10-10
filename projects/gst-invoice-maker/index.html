@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GST Invoice Maker — free, private, print-ready</title>
+  <meta name="description" content="Create GST tax invoices in your browser: GSTIN check, automatic CGST/SGST or IGST, HSN summary, amount in words and A4 PDF. Nothing is uploaded." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ctext y=%2213%22 font-size=%2213%22%3E%E2%82%B9%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>GST Invoice Maker</h1>
+    <div class="actions">
+      <button id="demo" type="button">Load sample</button>
+      <button id="newInvoice" type="button">New invoice</button>
+      <button id="print" type="button" class="primary">Print / Save PDF</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <form id="form" class="editor" autocomplete="off">
+      <fieldset>
+        <legend>Your business</legend>
+        <label>Business name <input name="sellerName" required /></label>
+        <label>Address <textarea name="sellerAddress" rows="2"></textarea></label>
+        <label>GSTIN <input name="sellerGstin" maxlength="15" placeholder="07AAACR5055K1Z9" /></label>
+        <p class="hint" data-hint="sellerGstin"></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Customer</legend>
+        <label>Name <input name="buyerName" required /></label>
+        <label>Address <textarea name="buyerAddress" rows="2"></textarea></label>
+        <label>GSTIN (optional for B2C) <input name="buyerGstin" maxlength="15" /></label>
+        <p class="hint" data-hint="buyerGstin"></p>
+        <label>Place of supply <select name="placeOfSupply"></select></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Invoice</legend>
+        <div class="row">
+          <label>Number <input name="number" /></label>
+          <label>Date <input name="date" type="date" /></label>
+        </div>
+        <label>Series prefix <input name="prefix" value="INV/" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Items</legend>
+        <div id="items"></div>
+        <button id="addItem" type="button">+ Add item</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Footer</legend>
+        <label>Bank details <textarea name="bank" rows="2" placeholder="Bank, A/c no., IFSC"></textarea></label>
+        <label>Terms <textarea name="terms" rows="2">Payment due within 15 days.</textarea></label>
+      </fieldset>
+      <ul id="errors" class="errors" aria-live="polite"></ul>
+    </form>
+
+    <section class="paper-wrap" aria-label="Invoice preview">
+      <article id="paper" class="paper"></article>
+    </section>
+  </main>
+
+  <template id="itemRow">
+    <div class="item">
+      <input data-k="description" placeholder="Description" class="desc" />
+      <input data-k="hsn" placeholder="HSN/SAC" inputmode="numeric" />
+      <input data-k="qty" type="number" min="0" step="any" value="1" aria-label="Quantity" />
+      <input data-k="rate" type="number" min="0" step="0.01" placeholder="Rate ₹" aria-label="Rate" />
+      <input data-k="discountPct" type="number" min="0" max="100" step="any" placeholder="Disc %" aria-label="Discount %" />
+      <select data-k="gstRate" aria-label="GST rate"></select>
+      <button type="button" class="remove" aria-label="Remove item">×</button>
+    </div>
+  </template>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

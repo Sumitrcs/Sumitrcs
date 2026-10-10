@@ -1,0 +1,14 @@
+{
+  "name": "gst-invoice-maker",
+  "version": "1.0.0",
+  "description": "Make GST tax invoices in the browser: GSTIN checksum validation, automatic CGST/SGST or IGST, HSN summary, amount in words and print-ready A4 PDF. No server, no sign-up.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "npx --yes serve ."
+  },
+  "keywords": ["gst", "invoice", "india", "billing", "msme", "web-app", "javascript"],
+  "author": "Sumit (https://github.com/Sumitrcs)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Sumitrcs/gst-invoice-maker.git" }
+}
