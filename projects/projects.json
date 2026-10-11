@@ -487,5 +487,28 @@
    "learning"
   ],
   "pages": true
+ },
+ {
+  "repo": "tinyregex",
+  "cat": "tools",
+  "lang": "Rust",
+  "emoji": "🔎",
+  "title": "tinyregex",
+  "desc": "Regex engine from scratch: recursive-descent parser, Thompson NFA compiler and Pike VM. Linear time, captures, named groups, plus a grep CLI.",
+  "tags": [
+   "Rust",
+   "Regex",
+   "Automata"
+  ],
+  "topics": [
+   "regex",
+   "regular-expressions",
+   "pike-vm",
+   "nfa",
+   "thompson-nfa",
+   "grep",
+   "rust",
+   "learning"
+  ]
  }
 ]
