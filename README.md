@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-24%20projects-0f9d76?style=for-the-badge&logo=github" alt="24 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-25%20projects-0f9d76?style=for-the-badge&logo=github" alt="25 projects"/></a>
 </p>
 
 ---
@@ -53,6 +53,7 @@
 | 🏛️ [**gem-bid-analyzer**](https://github.com/Sumitrcs/gem-bid-analyzer) | Eligibility go/no-go with document checklist, L1 ranking with MSE & Make-in-India preference, and price advice from past awards. | `Python` |
 | 📒 [**ledger-cli**](https://github.com/Sumitrcs/ledger-cli) | Plain-text double-entry accounting: balance assertions, trial balance, P&L and balance sheet with Indian number formatting. | `Go` |
 | 🧾 [**gst-invoice-maker**](https://github.com/Sumitrcs/gst-invoice-maker) · [**live demo**](https://sumitrcs.github.io/gst-invoice-maker/) | Browser-only GST tax invoice generator: GSTIN check-digit validation, auto CGST/SGST or IGST, HSN summary, amount in words, A4 PDF. | `JavaScript` |
+| 🏠 [**emi-planner**](https://github.com/Sumitrcs/emi-planner) | Loan EMI planner: amortization schedule, prepayment (cut tenure vs cut EMI), flat-to-reducing rate truth, real APR with fees, FY-wise totals. | `Python` |
 
 ### ⚙️ Systems & computer science from scratch
 

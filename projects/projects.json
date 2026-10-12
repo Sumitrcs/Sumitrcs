@@ -510,5 +510,28 @@
    "rust",
    "learning"
   ]
+ },
+ {
+  "repo": "emi-planner",
+  "cat": "fintech",
+  "lang": "Python",
+  "emoji": "🏠",
+  "title": "EMI Planner",
+  "desc": "Loan EMI planner: amortization schedule, prepayment (cut tenure vs cut EMI), flat-to-reducing rate truth, real APR with fees, FY-wise totals.",
+  "tags": [
+   "Python",
+   "Finance",
+   "CLI"
+  ],
+  "topics": [
+   "emi-calculator",
+   "loan",
+   "amortization",
+   "home-loan",
+   "prepayment",
+   "india",
+   "python",
+   "learning"
+  ]
  }
 ]
