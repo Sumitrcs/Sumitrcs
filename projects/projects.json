@@ -533,5 +533,27 @@
    "python",
    "learning"
   ]
+ },
+ {
+  "repo": "tinymalloc",
+  "cat": "systems",
+  "lang": "C",
+  "emoji": "🧱",
+  "title": "tinymalloc",
+  "desc": "malloc/free/realloc from scratch in C: boundary tags, explicit free list, split & coalesce, first vs best fit, heap checker and ASCII heap map.",
+  "tags": [
+   "C",
+   "Memory",
+   "Allocator"
+  ],
+  "topics": [
+   "malloc",
+   "memory-allocator",
+   "heap",
+   "c",
+   "systems-programming",
+   "data-structures",
+   "learning"
+  ]
  }
 ]
