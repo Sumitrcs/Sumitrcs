@@ -1,0 +1,62 @@
+<h1 id="tasky">tasky</h1>
+<p>A tiny <strong>to-do</strong> app. Works <em>offline</em>, stores data in <code>~/.tasky.json</code>.</p>
+<nav class="toc">
+<ul>
+<li><a href="#install">Install</a>
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+</ul>
+</li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul>
+</nav>
+<h2 id="install">Install</h2>
+<p>Pick one:</p>
+<ol>
+<li>
+<p>With Go:</p>
+<pre><code class="language-sh">go install github.com/example/tasky@latest
+</code></pre>
+</li>
+<li>
+<p>Download a <a href="https://github.com/example/tasky/releases" title="All releases">release</a>.</p>
+</li>
+</ol>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>Go 1.22+</li>
+<li>
+A terminal that supports colour
+<ul>
+<li>Windows Terminal, iTerm2 or any Linux terminal</li>
+</ul>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<table>
+<thead>
+<tr><th>Command</th><th style="text-align:center">What it does</th><th style="text-align:right">Alias</th></tr>
+</thead>
+<tbody>
+<tr><td><code>tasky add</code></td><td style="text-align:center">Add a task</td><td style="text-align:right"><code>a</code></td></tr>
+<tr><td><code>tasky done 3</code></td><td style="text-align:center">Mark task 3 as done</td><td style="text-align:right"><code>d</code></td></tr>
+<tr><td><code>tasky ls</code></td><td style="text-align:center">List open tasks</td><td style="text-align:right"></td></tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Tip:</strong> run <code>tasky ls --all</code> to include finished tasks.</p>
+<blockquote>
+<p>Nested quotes work too.</p>
+</blockquote>
+</blockquote>
+<p>Example session:</p>
+<pre><code>$ tasky add &quot;Buy milk&quot;
+added #1
+</code></pre>
+<h2 id="faq">FAQ</h2>
+<p>Where is my data?<br>
+In <code>~/.tasky.json</code> — a plain JSON file, safe to back up.</p>
+<p>Can I use &lt;b&gt;HTML&lt;/b&gt;? No, it is escaped for safety: 5 &lt; 6 &amp; &quot;quotes&quot;.</p>
+<hr>
+<p>Made with ❤ in India. Questions? <a href="mailto:hello@example.com">hello@example.com</a></p>

@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-26%20projects-0f9d76?style=for-the-badge&logo=github" alt="26 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-27%20projects-0f9d76?style=for-the-badge&logo=github" alt="27 projects"/></a>
 </p>
 
 ---
@@ -79,6 +79,7 @@
 | 📝 [**textdiff**](https://github.com/Sumitrcs/textdiff) | Myers O(ND) diff, git-compatible unified diffs, offset-tolerant patching, diff3 three-way merge and word-level diffs. | `TypeScript` |
 | 🕷️ [**sitecrawler**](https://github.com/Sumitrcs/sitecrawler) | Polite concurrent crawler: robots.txt (RFC 9309), per-host rate limits, broken-link report and sitemap.xml generation. | `Go` |
 | 🔎 [**tinyregex**](https://github.com/Sumitrcs/tinyregex) | Regex engine from scratch: recursive-descent parser, Thompson NFA compiler and Pike VM. Linear time, captures, named groups, plus a grep CLI. | `Rust` |
+| 📝 [**mdlite**](https://github.com/Sumitrcs/mdlite) | Markdown to HTML from scratch in Go: two-pass parser, CommonMark delimiter stack, GFM tables, TOC, XSS-safe output, fuzzed and blowup-proof. | `Go` |
 
 ### 🌐 Web apps
 
