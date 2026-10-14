@@ -555,5 +555,27 @@
    "data-structures",
    "learning"
   ]
+ },
+ {
+  "repo": "mdlite",
+  "cat": "tools",
+  "lang": "Go",
+  "emoji": "📝",
+  "title": "mdlite",
+  "desc": "Markdown to HTML from scratch in Go: two-pass parser, CommonMark delimiter stack, GFM tables, TOC, XSS-safe output, fuzzed and blowup-proof.",
+  "tags": [
+   "Go",
+   "Parser",
+   "Markdown"
+  ],
+  "topics": [
+   "markdown",
+   "markdown-to-html",
+   "parser",
+   "commonmark",
+   "golang",
+   "cli",
+   "learning"
+  ]
  }
 ]
