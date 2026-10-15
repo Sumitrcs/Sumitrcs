@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-27%20projects-0f9d76?style=for-the-badge&logo=github" alt="27 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-28%20projects-0f9d76?style=for-the-badge&logo=github" alt="28 projects"/></a>
 </p>
 
 ---
@@ -87,6 +87,7 @@
 |---|---|---|
 | 🧭 [**pathfinder-visualizer**](https://github.com/Sumitrcs/pathfinder-visualizer) · [**live demo**](https://sumitrcs.github.io/pathfinder-visualizer/) | Watch A*, Dijkstra, BFS, bidirectional BFS, greedy and DFS search a weighted grid; animated maze generation. Live demo. | `JavaScript` |
 | 🤝 [**settle-up**](https://github.com/Sumitrcs/settle-up) · [**live demo**](https://sumitrcs.github.io/settle-up/) | Split group expenses four ways and settle with the provably minimum number of payments (bitmask DP). Offline, shareable by link. | `JavaScript` |
+| 📲 [**upi-qr**](https://github.com/Sumitrcs/upi-qr) · [**live demo**](https://sumitrcs.github.io/upi-qr/) | Scan & Pay UPI QR codes for shops, with a QR encoder written from scratch: Reed–Solomon over GF(256), masks and penalty scoring. Verified by a real decoder. | `TypeScript` |
 <!-- projects:end -->
 
 ## 📊 GitHub stats

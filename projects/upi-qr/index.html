@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UPI QR Code Generator — free, private, print-ready</title>
+  <meta name="description" content="Make a UPI payment QR code for your shop in seconds: works with every UPI app, optional fixed amount, PNG/SVG download and a printable standee. Runs entirely in your browser." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230f7b5f'/%3E%3Cpath d='M3 3h4v4H3zM9 3h4v4H9zM3 9h4v4H3zM9 9h2v2H9zM11 11h2v2h-2z' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-mode="upi">
+  <header class="top">
+    <h1>UPI QR Code Generator</h1>
+    <p>Free and private: the QR code is made in your browser, nothing is uploaded.</p>
+  </header>
+
+  <main class="layout">
+    <form id="form" class="panel" autocomplete="off">
+      <fieldset class="tabs">
+        <legend class="sr-only">What to encode</legend>
+        <label><input type="radio" name="mode" value="upi" checked /> UPI payment</label>
+        <label><input type="radio" name="mode" value="text" /> Any text or link</label>
+      </fieldset>
+
+      <div class="upi-only">
+        <label><span>UPI ID <span class="req">*</span></span>
+          <input name="vpa" placeholder="yourshop@okicici" inputmode="email" spellcheck="false" />
+        </label>
+        <label>Name shown to the payer
+          <input name="name" placeholder="Sharma General Stores" />
+        </label>
+        <div class="row">
+          <label>Amount (₹)
+            <input name="amount" placeholder="Leave empty: payer enters" inputmode="decimal" />
+          </label>
+          <label>Reference
+            <input name="reference" placeholder="Order / invoice no." />
+          </label>
+        </div>
+        <label>Note
+          <input name="note" placeholder="e.g. Table 4" maxlength="80" />
+        </label>
+        <button type="button" id="example" class="link">Fill in an example</button>
+      </div>
+
+      <div class="text-only">
+        <label>Text or link
+          <textarea name="text" rows="4" placeholder="https://example.com or any text"></textarea>
+        </label>
+      </div>
+
+      <label>Error correction
+        <select name="level">
+          <option value="L">Low: smallest code (7% damage)</option>
+          <option value="M" selected>Medium: recommended (15%)</option>
+          <option value="Q">Quartile (25%)</option>
+          <option value="H">High: survives stickers, scratches (30%)</option>
+        </select>
+      </label>
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </form>
+
+    <section class="panel preview">
+      <article id="card" class="card">
+        <h2 id="cardName"></h2>
+        <div id="qr" class="qr" aria-label="QR code"></div>
+        <p id="cardAmount" class="amount"></p>
+        <p id="cardVpa" class="vpa"></p>
+        <p id="cardHint" class="hint"></p>
+      </article>
+      <p id="details" class="details"></p>
+      <div class="actions">
+        <button id="png" type="button" class="primary" data-needs-qr>Download PNG</button>
+        <button id="svg" type="button" data-needs-qr>SVG</button>
+        <button id="copy" type="button" data-needs-qr>Copy link</button>
+        <button id="print" type="button" data-needs-qr>Print</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    Works with BHIM, Google Pay, PhonePe, Paytm and every bank's UPI app. Always test with a ₹1 payment before printing.
+    · <a href="https://github.com/Sumitrcs/upi-qr">Source code</a>
+  </footer>
+
+  <script type="module" src="dist/app.js"></script>
+</body>
+</html>

@@ -21,4 +21,8 @@
     <loc>https://sumitrcs.github.io/gst-invoice-maker/</loc>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://sumitrcs.github.io/upi-qr/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
