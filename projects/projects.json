@@ -577,5 +577,29 @@
    "cli",
    "learning"
   ]
+ },
+ {
+  "repo": "upi-qr",
+  "cat": "web",
+  "lang": "TypeScript",
+  "emoji": "📲",
+  "title": "UPI QR Generator",
+  "desc": "Scan & Pay UPI QR codes for shops, with a QR encoder written from scratch: Reed–Solomon over GF(256), masks and penalty scoring. Verified by a real decoder.",
+  "tags": [
+   "TypeScript",
+   "QR code",
+   "UPI"
+  ],
+  "topics": [
+   "upi",
+   "qr-code",
+   "qr-generator",
+   "reed-solomon",
+   "india",
+   "payments",
+   "typescript",
+   "web-app"
+  ],
+  "pages": true
  }
 ]

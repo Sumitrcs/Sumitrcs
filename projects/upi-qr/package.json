@@ -1,0 +1,21 @@
+{
+  "name": "upi-qr",
+  "version": "1.0.0",
+  "description": "UPI payment QR code generator with a QR encoder written from scratch in TypeScript: Reed–Solomon error correction, masking and penalty scoring. Runs in the browser, no dependencies.",
+  "type": "module",
+  "main": "src/qr.ts",
+  "exports": {
+    "./qr": "./src/qr.ts",
+    "./upi": "./src/upi.ts"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "build": "node build.mjs",
+    "start": "npx --yes serve ."
+  },
+  "engines": { "node": ">=22.18" },
+  "keywords": ["upi", "qr-code", "qrcode", "reed-solomon", "india", "payments", "typescript"],
+  "author": "Sumit (https://github.com/Sumitrcs)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Sumitrcs/upi-qr.git" }
+}
