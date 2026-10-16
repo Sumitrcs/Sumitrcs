@@ -601,5 +601,28 @@
    "web-app"
   ],
   "pages": true
+ },
+ {
+  "repo": "dupfind",
+  "cat": "systems",
+  "lang": "Rust",
+  "emoji": "🔍",
+  "title": "dupfind",
+  "desc": "Find duplicate files fast: size → 4 KiB prefix → full SHA-256 (written from scratch), hashed on all cores. Reads 1.7% of a 2 GiB tree. sha256sum-compatible.",
+  "tags": [
+   "Rust",
+   "Hashing",
+   "CLI"
+  ],
+  "topics": [
+   "duplicate-files",
+   "dedupe",
+   "sha256",
+   "hashing",
+   "rust",
+   "cli",
+   "systems-programming",
+   "learning"
+  ]
  }
 ]
