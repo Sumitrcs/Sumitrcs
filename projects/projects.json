@@ -624,5 +624,28 @@
    "systems-programming",
    "learning"
   ]
+ },
+ {
+  "repo": "recall",
+  "cat": "tools",
+  "lang": "Python",
+  "emoji": "🧠",
+  "title": "recall",
+  "desc": "Spaced-repetition flashcards in the terminal: the SM-2 algorithm, SQLite storage, CSV import/export, study sessions, streaks and retention stats. Stdlib only.",
+  "tags": [
+   "Python",
+   "Algorithms",
+   "CLI"
+  ],
+  "topics": [
+   "flashcards",
+   "spaced-repetition",
+   "sm2",
+   "anki",
+   "sqlite",
+   "study",
+   "python",
+   "learning"
+  ]
  }
 ]
