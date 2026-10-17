@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recall-cards"
+version = "1.0.0"
+description = "Spaced-repetition flashcards in the terminal: the SM-2 algorithm, SQLite storage, CSV import/export, study sessions and progress stats. Standard library only."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sumit", email = "155360729+Sumitrcs@users.noreply.github.com" }]
+keywords = ["flashcards", "spaced-repetition", "sm2", "anki", "study", "cli"]
+
+[project.urls]
+Homepage = "https://github.com/Sumitrcs/recall"
+
+[project.scripts]
+recall = "recall.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["recall"]
