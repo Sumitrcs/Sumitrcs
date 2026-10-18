@@ -1,0 +1,61 @@
+# Each line is run by tinysh -c and by /bin/sh -c in the same scratch folder.
+# Their standard output and exit status must be identical.
+echo hello world
+echo   lots    of   spaces
+echo 'single quotes keep $HOME and   spaces'
+echo "double quotes expand $HOME but keep   spaces"
+echo "escaped \$HOME and \"quotes\" and \\ backslash"
+echo a\ b c\$d
+echo "mixed"'quotes'together
+echo ''
+echo "" | wc -c
+X="one two  three"; echo $X; echo "$X"
+X=; echo "[$X]" [$X]
+echo ${HOME}/x $HOME/y
+echo $UNDEFINED_VARIABLE_XYZ end
+echo $
+echo cost: $5 $9x
+echo $0 | grep -c sh
+echo ~ ~/docs
+echo *.c
+echo "*.c" '*.c' \*.c
+echo *.nothing-matches
+echo [ab].c
+echo ?.c
+ls *.c | wc -l
+printf 'b\na\nc\n' | sort | head -2
+printf 'one\ntwo\nthree\n' | grep t | wc -l
+echo hello | tr a-z A-Z | rev
+true && echo and-ran
+false && echo should-not-run
+false || echo or-ran
+true || echo should-not-run
+false && echo x || echo fallback
+true; false; echo status $?
+false; echo $?
+true; echo $?
+sh -c 'exit 7'; echo $?
+echo first; echo second ; echo third;
+echo out > f1.txt; cat f1.txt
+echo one > f2.txt; echo two >> f2.txt; cat f2.txt
+echo one > f2.txt; echo two >> f2.txt; wc -l < f2.txt
+cat < missing-file || echo could-not-read
+echo replaced > f2.txt; cat f2.txt
+ls no-such-file 2> err.txt; wc -l < err.txt
+ls no-such-file 2>&1 | wc -l
+cat < f1.txt | tr a-z A-Z > f3.txt; cat f3.txt
+> empty.txt; wc -c < empty.txt
+cd sub && pwd | sed 's|.*/||'
+cd sub; cd ..; pwd | sed 's|.*/||'
+cd /no/such/dir || echo cd-failed
+export GREETING=namaste; sh -c 'echo $GREETING'
+NAME=inline sh -c 'echo $NAME'; echo "[$NAME]"
+A=1 B=2; echo $A$B
+unset HOME; echo "[$HOME]"
+no-such-command-xyz; echo $?
+./not-executable.sh; echo $?
+echo end # this is a comment
+echo "a#b" a#b
+exit 3
+exit
+sleep 0.2 & echo started

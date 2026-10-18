@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-30%20projects-0f9d76?style=for-the-badge&logo=github" alt="30 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-31%20projects-0f9d76?style=for-the-badge&logo=github" alt="31 projects"/></a>
 </p>
 
 ---
@@ -69,6 +69,7 @@
 | 🧠 [**tinyredis**](https://github.com/Sumitrcs/tinyredis) | A small Redis server that real redis-cli talks to: RESP protocol, strings, lists, hashes, TTL expiry, pipelining and AOF persistence. | `Go` |
 | 🧱 [**tinymalloc**](https://github.com/Sumitrcs/tinymalloc) | malloc/free/realloc from scratch in C: boundary tags, explicit free list, split & coalesce, first vs best fit, heap checker and ASCII heap map. | `C` |
 | 🔍 [**dupfind**](https://github.com/Sumitrcs/dupfind) | Find duplicate files fast: size → 4 KiB prefix → full SHA-256 (written from scratch), hashed on all cores. Reads 1.7% of a 2 GiB tree. sha256sum-compatible. | `Rust` |
+| 🐚 [**tinysh**](https://github.com/Sumitrcs/tinysh) | A Unix shell in C: lexer, recursive-descent parser, fork/exec, pipes, redirections, && || ;, $VARS, quotes, globbing, builtins and Ctrl-C. Tested against /bin/sh. | `C` |
 
 ### 🛠️ Developer tools & backend
 

@@ -647,5 +647,28 @@
    "python",
    "learning"
   ]
+ },
+ {
+  "repo": "tinysh",
+  "cat": "systems",
+  "lang": "C",
+  "emoji": "🐚",
+  "title": "tinysh",
+  "desc": "A Unix shell in C: lexer, recursive-descent parser, fork/exec, pipes, redirections, && || ;, $VARS, quotes, globbing, builtins and Ctrl-C. Tested against /bin/sh.",
+  "tags": [
+   "C",
+   "Shell",
+   "Processes"
+  ],
+  "topics": [
+   "shell",
+   "unix",
+   "fork-exec",
+   "pipes",
+   "c",
+   "operating-systems",
+   "systems-programming",
+   "learning"
+  ]
  }
 ]
