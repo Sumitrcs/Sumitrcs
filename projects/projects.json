@@ -670,5 +670,28 @@
    "systems-programming",
    "learning"
   ]
+ },
+ {
+  "repo": "itc-recon",
+  "cat": "fintech",
+  "lang": "Go",
+  "emoji": "🧮",
+  "title": "ITC Recon",
+  "desc": "GST input tax credit reconciliation: purchase register vs GSTR-2B (portal JSON or CSV). Exact + fuzzy invoice matching, claimable vs at-risk ITC, supplier follow-up list.",
+  "tags": [
+   "Go",
+   "GST",
+   "Reconciliation"
+  ],
+  "topics": [
+   "gst",
+   "gstr-2b",
+   "itc",
+   "reconciliation",
+   "india",
+   "accounting",
+   "golang",
+   "msme"
+  ]
  }
 ]
