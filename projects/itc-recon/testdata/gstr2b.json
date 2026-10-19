@@ -1,0 +1,49 @@
+{
+  "chksum": "demo",
+  "data": {
+    "gstin": "27AAGCS0000A1Z5",
+    "rtnprd": "082026",
+    "docdata": {
+      "b2b": [
+        {
+          "ctin": "27AABCS1234A1Z1",
+          "trdnm": "SHREE STEEL TRADERS",
+          "inv": [
+            {"inum": "SST/101/26-27", "dt": "05-08-2026", "val": 118000, "itcavl": "Y",
+             "items": [{"num": 1, "rt": 18, "txval": 100000, "cgst": 9000, "sgst": 9000, "cess": 0}]},
+            {"inum": "SST-0102/26-27", "dt": "12-08-2026", "val": 59000, "itcavl": "Y",
+             "txval": 50000, "cgst": 4500, "sgst": 4500},
+            {"inum": "SST/115/26-27", "dt": "28-08-2026", "val": 9440, "itcavl": "Y",
+             "items": [{"num": 1, "rt": 18, "txval": 8000, "cgst": 720, "sgst": 720}]}
+          ]
+        },
+        {
+          "ctin": "29AAGCK5678B1ZA",
+          "trdnm": "KARNATAKA PACKAGING CO",
+          "inv": [
+            {"inum": "KPC-7781", "dt": "03-08-2026", "val": 28000, "itcavl": "Y",
+             "items": [{"num": 1, "rt": 12, "txval": 25000, "igst": 3000}]},
+            {"inum": "KPC-779O", "dt": "21-08-2026", "val": 21240, "itcavl": "Y",
+             "items": [{"num": 1, "rt": 18, "txval": 18000, "igst": 3240}]}
+          ]
+        },
+        {
+          "ctin": "24AAFFM3456D1ZL",
+          "trdnm": "MEHTA CHEMICALS",
+          "inv": [
+            {"inum": "MC/2026/91", "dt": "22-08-2026", "val": 70800, "itcavl": "N", "rsn": "P",
+             "items": [{"num": 1, "rt": 18, "txval": 60000, "igst": 10800}]}
+          ]
+        },
+        {
+          "ctin": "33AABCT7890E1Z9",
+          "trdnm": "TAMIL TEXTILES",
+          "inv": [
+            {"inum": "TT/441", "dt": "25-08-2026", "val": 31500, "itcavl": "Y",
+             "items": [{"num": 1, "rt": 5, "txval": 30000, "igst": 1500}]}
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+ITC reconciliation: purchase register vs GSTR-2B
+
+        ITC in your books  ₹74,400.00
+  ITC reported in GSTR-2B  ₹46,980.00
+            Claimable now  ₹33,240.00
+      At risk (follow up)  ₹41,160.00
+      In 2B, not in books   ₹2,940.00
+
+3 matched, 1 probable, 1 amount mismatch, 4 only in books, 2 only in 2B
+
+Suppliers to follow up (ITC at risk):
+  24AAFFM3456D1ZL  Mehta Chemicals               1 bill  ₹10,800.00
+  07AAACR9012C1ZT  Raj Electricals               2 bills  ₹9,360.00
+  29AAGCK5678B1ZA  Karnataka Packaging Co        1 bill  ₹1,500.00
+
+Probable (1):
+  29AAGCK5678B1ZA  KPC-7790         20-08-2026  tax ₹3,240.00
+      invoice number differs: KPC-7790 vs KPC-779O
+
+Amount mismatch (1):
+  29AAGCK5678B1ZA  KPC-7781         03-08-2026  tax ₹4,500.00
+      2B differs from books: tax -1,500.00
+
+Only in books (4):
+  07AAACR9012C1ZT  REL/55           10-08-2026  tax ₹7,200.00
+      not in GSTR-2B: ask the supplier to file
+  07AAACR9012C1ZT  REL/56           18-08-2026  tax ₹2,160.00
+      not in GSTR-2B: ask the supplier to file
+  27AABCS1234A1Z1  SST/101/26-27    05-08-2026  tax ₹18,000.00
+      entered twice: same bill as line 2 of your books
+  33AABCT7890E1Z8  TT/441           25-08-2026  tax ₹1,500.00
+      GSTIN looks mistyped: 2B has the same bill under 33AABCT7890E1Z9
+
+Only in 2B (2):
+  27AABCS1234A1Z1  SST/115/26-27    28-08-2026  tax ₹1,440.00
+      not in your books: record it, or check it's really yours
+  33AABCT7890E1Z9  TT/441           25-08-2026  tax ₹1,500.00
+      not in your books: record it, or check it's really yours
+
+Entered twice in your books (only one can be claimed):
+  line 10: 27AABCS1234A1Z1 SST/101/26-27
+
+Invalid GSTINs in your books (typing mistake?):
+  line 9: "33AABCT7890E1Z8" (Tamil Textiles)
