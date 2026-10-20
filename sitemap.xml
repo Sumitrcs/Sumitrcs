@@ -25,4 +25,8 @@
     <loc>https://sumitrcs.github.io/upi-qr/</loc>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://sumitrcs.github.io/json-lens/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>

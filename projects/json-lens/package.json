@@ -1,0 +1,23 @@
+{
+  "name": "json-lens",
+  "version": "1.0.0",
+  "description": "JSON validator, formatter and explorer with a hand-written parser: precise error messages with fix hints, tree view with copyable paths, TypeScript type and CSV generation. Runs in the browser, no dependencies.",
+  "type": "module",
+  "main": "src/parse.ts",
+  "exports": {
+    "./parse": "./src/parse.ts",
+    "./format": "./src/format.ts",
+    "./types": "./src/types.ts",
+    "./csv": "./src/csv.ts"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "build": "node build.mjs",
+    "start": "npx --yes serve ."
+  },
+  "engines": { "node": ">=22.18" },
+  "keywords": ["json", "json-formatter", "json-validator", "parser", "typescript", "csv", "developer-tools"],
+  "author": "Sumit (https://github.com/Sumitrcs)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Sumitrcs/json-lens.git" }
+}
