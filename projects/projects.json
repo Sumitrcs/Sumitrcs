@@ -693,5 +693,29 @@
    "golang",
    "msme"
   ]
+ },
+ {
+  "repo": "json-lens",
+  "cat": "web",
+  "lang": "TypeScript",
+  "emoji": "🔍",
+  "title": "JSON Lens",
+  "desc": "JSON validator and explorer with a hand-written parser: errors that point to the exact line and explain the fix, tree view with copyable paths, TypeScript types and CSV export.",
+  "tags": [
+   "TypeScript",
+   "Parser",
+   "JSON"
+  ],
+  "topics": [
+   "json",
+   "json-formatter",
+   "json-validator",
+   "parser",
+   "typescript",
+   "csv",
+   "developer-tools",
+   "beginner-friendly"
+  ],
+  "pages": true
  }
 ]
