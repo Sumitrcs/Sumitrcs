@@ -1,0 +1,26 @@
+# A short trading session. Sellers and buyers place orders that wait in the book.
+sell 1 100 101.50
+sell 2  50 101.50
+sell 3 200 102.00
+buy  4  80 101.00
+buy  5  40 100.50
+book
+
+# A buyer willing to pay up to 101.75 takes the cheapest shares first.
+# Order 1 arrived before order 2 at the same price, so it trades first.
+buy 6 120 101.75
+
+# A market sell takes the best bids, walking down the book.
+sell 7 100 market
+
+# Order 3 is cut to 150: it keeps its place. Order 5 (20 left) moves to a new price.
+modify 3 150
+modify 5 20 100.75
+
+# Fill-or-kill: 500 can't be filled in full, so nothing trades.
+buy 8 500 102.00 fok
+# Post-only would trade against 101.50, so it is rejected.
+buy 9 10 101.50 post
+# Cancelling works once; after that the order is gone.
+cancel 3
+cancel 3

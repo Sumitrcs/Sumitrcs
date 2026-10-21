@@ -1,0 +1,22 @@
+[package]
+name = "matchbook"
+version = "1.0.0"
+edition = "2024"
+description = "A limit order book and matching engine, the core of every stock exchange: price-time priority, limit/market/IOC/FOK/post-only orders, cancel and modify. No dependencies."
+license = "MIT"
+authors = ["Sumit <155360729+Sumitrcs@users.noreply.github.com>"]
+repository = "https://github.com/Sumitrcs/matchbook"
+keywords = ["order-book", "matching-engine", "exchange", "trading", "fintech"]
+categories = ["command-line-utilities", "finance", "data-structures"]
+
+[lib]
+name = "matchbook"
+path = "src/lib.rs"
+
+[[bin]]
+name = "matchbook"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+codegen-units = 1

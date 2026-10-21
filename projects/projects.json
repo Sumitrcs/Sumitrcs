@@ -717,5 +717,28 @@
    "beginner-friendly"
   ],
   "pages": true
+ },
+ {
+  "repo": "matchbook",
+  "cat": "fintech",
+  "lang": "Rust",
+  "emoji": "📈",
+  "title": "matchbook",
+  "desc": "Stock exchange matching engine: limit order book with price-time priority, limit/market/IOC/FOK/post-only orders, cancel and modify. Millions of orders per second, tested against a reference engine.",
+  "tags": [
+   "Rust",
+   "Trading",
+   "Order book"
+  ],
+  "topics": [
+   "order-book",
+   "matching-engine",
+   "exchange",
+   "trading",
+   "fintech",
+   "rust",
+   "data-structures",
+   "learning"
+  ]
  }
 ]
