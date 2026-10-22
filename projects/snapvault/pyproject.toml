@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snapvault"
+version = "1.0.0"
+description = "Deduplicating, incremental backups with content-defined chunking (the idea behind restic and borg): snapshots, restore, diff, check and prune. Standard library only."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sumit", email = "155360729+Sumitrcs@users.noreply.github.com" }]
+keywords = ["backup", "deduplication", "chunking", "fastcdc", "snapshots", "cli"]
+
+[project.urls]
+Homepage = "https://github.com/Sumitrcs/snapvault"
+
+[project.scripts]
+snapvault = "snapvault.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["snapvault"]

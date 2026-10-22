@@ -740,5 +740,28 @@
    "data-structures",
    "learning"
   ]
+ },
+ {
+  "repo": "snapvault",
+  "cat": "systems",
+  "lang": "Python",
+  "emoji": "🗄️",
+  "title": "snapvault",
+  "desc": "Deduplicating, incremental backups like restic and borg: content-defined chunking (FastCDC gear hash), SHA-256 content-addressed storage, snapshots, restore, diff, check and prune.",
+  "tags": [
+   "Python",
+   "Backup",
+   "Deduplication"
+  ],
+  "topics": [
+   "backup",
+   "deduplication",
+   "content-defined-chunking",
+   "fastcdc",
+   "snapshots",
+   "python",
+   "cli",
+   "learning"
+  ]
  }
 ]
