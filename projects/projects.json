@@ -763,5 +763,28 @@
    "cli",
    "learning"
   ]
+ },
+ {
+  "repo": "tinyed",
+  "cat": "tools",
+  "lang": "C",
+  "emoji": "📝",
+  "title": "tinyed",
+  "desc": "A terminal text editor in 1,500 lines of C with no libraries: raw mode, syntax highlighting for 5 languages, search, undo/redo, auto-indent and crash-safe saving. Tested through a pseudo-terminal.",
+  "tags": [
+   "C",
+   "Editor",
+   "Terminal"
+  ],
+  "topics": [
+   "text-editor",
+   "terminal",
+   "c",
+   "termios",
+   "syntax-highlighting",
+   "undo-redo",
+   "systems-programming",
+   "learning"
+  ]
  }
 ]
