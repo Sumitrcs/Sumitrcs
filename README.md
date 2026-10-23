@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-35%20projects-0f9d76?style=for-the-badge&logo=github" alt="35 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-36%20projects-0f9d76?style=for-the-badge&logo=github" alt="36 projects"/></a>
 </p>
 
 ---
@@ -86,6 +86,7 @@
 | 🔎 [**tinyregex**](https://github.com/Sumitrcs/tinyregex) | Regex engine from scratch: recursive-descent parser, Thompson NFA compiler and Pike VM. Linear time, captures, named groups, plus a grep CLI. | `Rust` |
 | 📝 [**mdlite**](https://github.com/Sumitrcs/mdlite) | Markdown to HTML from scratch in Go: two-pass parser, CommonMark delimiter stack, GFM tables, TOC, XSS-safe output, fuzzed and blowup-proof. | `Go` |
 | 🧠 [**recall**](https://github.com/Sumitrcs/recall) | Spaced-repetition flashcards in the terminal: the SM-2 algorithm, SQLite storage, CSV import/export, study sessions, streaks and retention stats. Stdlib only. | `Python` |
+| 📝 [**tinyed**](https://github.com/Sumitrcs/tinyed) | A terminal text editor in 1,500 lines of C with no libraries: raw mode, syntax highlighting for 5 languages, search, undo/redo, auto-indent and crash-safe saving. Tested through a pseudo-terminal. | `C` |
 
 ### 🌐 Web apps
 
