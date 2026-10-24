@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-36%20projects-0f9d76?style=for-the-badge&logo=github" alt="36 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-37%20projects-0f9d76?style=for-the-badge&logo=github" alt="37 projects"/></a>
 </p>
 
 ---
@@ -96,6 +96,7 @@
 | 🤝 [**settle-up**](https://github.com/Sumitrcs/settle-up) · [**live demo**](https://sumitrcs.github.io/settle-up/) | Split group expenses four ways and settle with the provably minimum number of payments (bitmask DP). Offline, shareable by link. | `JavaScript` |
 | 📲 [**upi-qr**](https://github.com/Sumitrcs/upi-qr) · [**live demo**](https://sumitrcs.github.io/upi-qr/) | Scan & Pay UPI QR codes for shops, with a QR encoder written from scratch: Reed–Solomon over GF(256), masks and penalty scoring. Verified by a real decoder. | `TypeScript` |
 | 🔍 [**json-lens**](https://github.com/Sumitrcs/json-lens) · [**live demo**](https://sumitrcs.github.io/json-lens/) | JSON validator and explorer with a hand-written parser: errors that point to the exact line and explain the fix, tree view with copyable paths, TypeScript types and CSV export. | `TypeScript` |
+| 📡 [**upwatch**](https://github.com/Sumitrcs/upwatch) | Self-hosted uptime monitor and status page: concurrent HTTP checks, debounced Slack/Discord webhook alerts, incidents, 24-hour uptime bars and latency percentiles. One Go binary. | `Go` |
 <!-- projects:end -->
 
 ## 📊 GitHub stats

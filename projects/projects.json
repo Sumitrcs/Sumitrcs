@@ -786,5 +786,28 @@
    "systems-programming",
    "learning"
   ]
+ },
+ {
+  "repo": "upwatch",
+  "cat": "web",
+  "lang": "Go",
+  "emoji": "📡",
+  "title": "upwatch",
+  "desc": "Self-hosted uptime monitor and status page: concurrent HTTP checks, debounced Slack/Discord webhook alerts, incidents, 24-hour uptime bars and latency percentiles. One Go binary.",
+  "tags": [
+   "Go",
+   "Monitoring",
+   "Status page"
+  ],
+  "topics": [
+   "uptime-monitor",
+   "status-page",
+   "monitoring",
+   "golang",
+   "webhooks",
+   "self-hosted",
+   "devops",
+   "learning"
+  ]
  }
 ]

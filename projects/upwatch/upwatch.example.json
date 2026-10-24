@@ -1,0 +1,11 @@
+{
+  "title": "Sharma Stores status",
+  "listen": ":8080",
+  "data_file": "upwatch-history.jsonl",
+  "webhook": "",
+  "checks": [
+    { "name": "Website", "url": "https://example.com/", "interval": "1m", "expect_text": "Example Domain" },
+    { "name": "Payments API", "url": "https://example.com/api/health", "interval": "30s", "timeout": "5s", "expect_status": 200 },
+    { "name": "Admin panel", "url": "https://example.org/", "interval": "5m", "failures_before_down": 3 }
+  ]
+}

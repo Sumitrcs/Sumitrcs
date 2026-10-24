@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="60">
+<title>{{.Title}}: {{.Overall}}</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='{{.FaviconColor}}'/%3E%3C/svg%3E">
+<style>
+:root { --bg:#f4f6f9; --card:#fff; --text:#18202c; --muted:#5f6b7a; --line:#dde3ea;
+        --up:#1f9d55; --partial:#d99a00; --down:#d43c3c; --none:#c9d1db; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0f1319; --card:#171d26; --text:#e6eaf0; --muted:#97a2b2; --line:#283140; --none:#323c4b; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 820px; margin: 0 auto; padding: 24px 16px 40px; }
+h1 { font-size: 1.4rem; margin: 0 0 16px; }
+.banner { border-radius: 12px; padding: 14px 18px; color: #fff; font-weight: 600; font-size: 1.05rem; margin-bottom: 20px; }
+.banner.up { background: var(--up); } .banner.partial { background: var(--partial); }
+.banner.down { background: var(--down); } .banner.none { background: var(--muted); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-bottom: 14px; }
+.head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.name { font-weight: 600; font-size: 1.05rem; overflow-wrap: anywhere; }
+.state { font-weight: 600; font-size: .9rem; text-transform: uppercase; letter-spacing: .03em; }
+.state.up { color: var(--up); } .state.down { color: var(--down); } .state.unknown { color: var(--muted); }
+.url { color: var(--muted); font-size: .85rem; overflow-wrap: anywhere; margin: 2px 0 10px; }
+.bars { display: grid; grid-template-columns: repeat(48, minmax(0, 1fr)); gap: 2px; height: 30px; }
+.bars span { border-radius: 2px; background: var(--none); }
+.bars .up { background: var(--up); } .bars .partial { background: var(--partial); } .bars .down { background: var(--down); }
+.axis { display: flex; justify-content: space-between; color: var(--muted); font-size: .75rem; margin-top: 4px; }
+.stats { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; font-size: .88rem; color: var(--muted); }
+.stats b { color: var(--text); font-weight: 600; }
+.error { color: var(--down); font-size: .88rem; margin-top: 8px; overflow-wrap: anywhere; }
+h2 { font-size: 1.05rem; margin: 26px 0 10px; }
+.incident { padding: 10px 0; border-top: 1px solid var(--line); font-size: .9rem; overflow-wrap: anywhere; }
+.incident:first-of-type { border-top: 0; }
+.incident .when { color: var(--muted); }
+footer { color: var(--muted); font-size: .8rem; margin-top: 24px; }
+footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>{{.Title}}</h1>
+  <div class="banner {{.OverallClass}}">{{.Overall}}</div>
+  {{range .Checks}}
+  <section class="card">
+    <div class="head">
+      <span class="name">{{.Name}}</span>
+      <span class="state {{.State}}">{{if eq .State "up"}}Operational{{else if eq .State "down"}}Down{{else}}Checking…{{end}}</span>
+    </div>
+    <div class="url">{{.URL}}</div>
+    <div class="bars" role="img" aria-label="Uptime over the last 24 hours">
+      {{range .Bars}}<span class="{{.Class}}" title="{{clock .Start}}–{{clock .End}}: {{if .Total}}{{.OK}} of {{.Total}} checks OK{{else}}no data{{end}}"></span>{{end}}
+    </div>
+    <div class="axis"><span>24 hours ago</span><span>now</span></div>
+    <div class="stats">
+      <span>Uptime <b>{{percent .Uptime}}</b></span>
+      <span>Median response <b>{{ms .P50}}</b></span>
+      <span>95th percentile <b>{{ms .P95}}</b></span>
+      {{with .Last}}<span>Last check <b>{{ago .Time}}</b></span>{{end}}
+    </div>
+    {{with .Last}}{{if not .OK}}<div class="error">{{.Error}}</div>{{end}}{{end}}
+  </section>
+  {{end}}
+
+  <h2>Recent incidents</h2>
+  <section class="card">
+    {{range .Incidents}}
+    <div class="incident">
+      <b>{{.Check}}</b> was down {{if .End.IsZero}}since {{when .Start}} <b>(ongoing)</b>{{else}}for {{duration .Start .End}}, {{when .Start}}{{end}}
+      <div class="when">{{.Reason}}</div>
+    </div>
+    {{else}}
+    <div class="incident">No incidents. 🎉</div>
+    {{end}}
+  </section>
+  <footer>Updated {{when .Now}} · refreshes every minute · <a href="api/status">JSON</a> · powered by <a href="https://github.com/Sumitrcs/upwatch">upwatch</a></footer>
+</main>
+</body>
+</html>
