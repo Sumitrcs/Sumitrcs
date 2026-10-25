@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://sumitrcs.github.io"><img src="https://img.shields.io/badge/Portfolio-sumitrcs.github.io-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-37%20projects-0f9d76?style=for-the-badge&logo=github" alt="37 projects"/></a>
+  <a href="https://github.com/Sumitrcs?tab=repositories"><img src="https://img.shields.io/badge/Open%20source-38%20projects-0f9d76?style=for-the-badge&logo=github" alt="38 projects"/></a>
 </p>
 
 ---
@@ -97,6 +97,7 @@
 | 📲 [**upi-qr**](https://github.com/Sumitrcs/upi-qr) · [**live demo**](https://sumitrcs.github.io/upi-qr/) | Scan & Pay UPI QR codes for shops, with a QR encoder written from scratch: Reed–Solomon over GF(256), masks and penalty scoring. Verified by a real decoder. | `TypeScript` |
 | 🔍 [**json-lens**](https://github.com/Sumitrcs/json-lens) · [**live demo**](https://sumitrcs.github.io/json-lens/) | JSON validator and explorer with a hand-written parser: errors that point to the exact line and explain the fix, tree view with copyable paths, TypeScript types and CSV export. | `TypeScript` |
 | 📡 [**upwatch**](https://github.com/Sumitrcs/upwatch) | Self-hosted uptime monitor and status page: concurrent HTTP checks, debounced Slack/Discord webhook alerts, incidents, 24-hour uptime bars and latency percentiles. One Go binary. | `Go` |
+| ⚛️ [**tinyui**](https://github.com/Sumitrcs/tinyui) · [**live demo**](https://sumitrcs.github.io/tinyui/) | A React-style UI library from scratch: virtual DOM, keyed diffing with the fewest DOM moves (longest increasing subsequence), function components, hooks and batched updates. Live demo. | `TypeScript` |
 <!-- projects:end -->
 
 ## 📊 GitHub stats

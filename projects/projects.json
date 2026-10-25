@@ -809,5 +809,29 @@
    "devops",
    "learning"
   ]
+ },
+ {
+  "repo": "tinyui",
+  "cat": "web",
+  "lang": "TypeScript",
+  "emoji": "⚛️",
+  "title": "tinyui",
+  "desc": "A React-style UI library from scratch: virtual DOM, keyed diffing with the fewest DOM moves (longest increasing subsequence), function components, hooks and batched updates. Live demo.",
+  "tags": [
+   "TypeScript",
+   "Virtual DOM",
+   "Hooks"
+  ],
+  "topics": [
+   "virtual-dom",
+   "react",
+   "hooks",
+   "diffing",
+   "ui-library",
+   "typescript",
+   "frontend",
+   "learning"
+  ],
+  "pages": true
  }
 ]
